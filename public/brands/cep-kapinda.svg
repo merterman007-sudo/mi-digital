@@ -1,0 +1,43 @@
+<svg width="1400" height="380" viewBox="0 0 1400 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cep Kapında Telefon Tamiri">
+  <defs>
+    <linearGradient id="logoAura" x1="40" y1="20" x2="260" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1EE3D1"/>
+      <stop offset="1" stop-color="#5B8DEF"/>
+    </linearGradient>
+    <linearGradient id="phoneBody" x1="84" y1="52" x2="244" y2="242" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F2847"/>
+      <stop offset="1" stop-color="#08111F"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(36 30)">
+    <circle cx="130" cy="130" r="118" fill="url(#logoAura)" fill-opacity="0.16"/>
+    <circle cx="130" cy="130" r="98" fill="#07111F" fill-opacity="0.92" stroke="url(#logoAura)" stroke-width="4"/>
+
+    <rect x="85" y="55" width="90" height="150" rx="20" fill="url(#phoneBody)" stroke="#DCEBFF" stroke-width="5"/>
+    <rect x="97" y="74" width="66" height="96" rx="10" fill="#12253E"/>
+    <circle cx="130" cy="185" r="6" fill="#1EE3D1"/>
+
+    <path d="M66 106C80 84 103 70 131 70" stroke="#1EE3D1" stroke-width="12" stroke-linecap="round"/>
+    <path d="M61 79C83 45 117 26 159 24" stroke="#5B8DEF" stroke-width="10" stroke-linecap="round"/>
+    <path d="M175 90C201 96 218 113 223 138" stroke="#7FE8FF" stroke-width="10" stroke-linecap="round"/>
+
+    <circle cx="72" cy="154" r="7" fill="#7FE8FF"/>
+    <circle cx="194" cy="76" r="8" fill="#1EE3D1"/>
+    <circle cx="217" cy="154" r="6" fill="#5B8DEF"/>
+  </g>
+
+  <g transform="translate(325 74)">
+    <text x="0" y="110" font-family="Arial, Helvetica, sans-serif" font-size="118" font-style="italic" font-weight="800" letter-spacing="-6">
+      <tspan fill="#1EE3D1">Cep</tspan>
+      <tspan fill="#EAF2FF">Kapında</tspan>
+    </text>
+
+    <rect x="4" y="132" width="150" height="7" rx="3.5" fill="#1EE3D1"/>
+    <rect x="170" y="132" width="98" height="7" rx="3.5" fill="#5B8DEF"/>
+
+    <text x="4" y="192" font-family="Arial, Helvetica, sans-serif" font-size="42" font-style="italic" font-weight="700" fill="#8FB7FF" letter-spacing="-1">
+      Telefon Tamiri
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 108" role="img" aria-labelledby="title desc">
+  <title id="title">Pratik Servisim</title>
+  <desc id="desc">Pratik Servisim marka logosu</desc>
+  <circle cx="55" cy="54" r="39" fill="#f97316"/>
+  <path d="M35 34h22c16 0 25 8 25 21 0 14-10 22-26 22h-5v13H35V34Zm16 14v15h5c7 0 10-2 10-8 0-5-3-7-10-7h-5Z" fill="#fff"/>
+  <path d="M75 25 88 12M84 38l17-5" fill="none" stroke="#0f766e" stroke-width="7" stroke-linecap="round"/>
+  <text x="112" y="60" fill="#172033" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800">PRATİK</text>
+  <text x="112" y="87" fill="#f97316" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" letter-spacing="5">SERVİSİM</text>
+</svg>

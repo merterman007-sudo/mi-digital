@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 108" role="img" aria-labelledby="title desc">
+  <title id="title">End Luxury Wear</title>
+  <desc id="desc">End Luxury Wear marka logosu</desc>
+  <rect x="16" y="16" width="76" height="76" rx="4" fill="#111"/>
+  <path d="M34 36h42v9H44v9h28v9H44v10h33v9H34V36Z" fill="#d6ad60"/>
+  <text x="111" y="61" fill="#111" font-family="Georgia, 'Times New Roman', serif" font-size="45" font-weight="700" letter-spacing="5">END</text>
+  <text x="113" y="84" fill="#a5792c" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="5">LUXURY WEAR</text>
+</svg>

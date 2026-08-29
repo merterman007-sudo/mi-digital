@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 108" role="img" aria-labelledby="title desc">
+  <title id="title">PatiDostum</title>
+  <desc id="desc">PatiDostum marka logosu</desc>
+  <circle cx="52" cy="57" r="31" fill="#d97706"/>
+  <ellipse cx="35" cy="29" rx="9" ry="13" fill="#f59e0b" transform="rotate(-22 35 29)"/>
+  <ellipse cx="56" cy="24" rx="9" ry="13" fill="#f59e0b"/>
+  <ellipse cx="76" cy="31" rx="9" ry="13" fill="#f59e0b" transform="rotate(22 76 31)"/>
+  <path d="M31 61c0-14 10-25 23-25s23 11 23 25c0 13-10 23-23 23S31 74 31 61Z" fill="#fff"/>
+  <text x="102" y="67" fill="#263238" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="800">Pati</text>
+  <text x="182" y="67" fill="#d97706" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="800">Dostum</text>
+  <text x="106" y="88" fill="#69757d" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" letter-spacing="2">DOSTLARIN HEP YANINDA</text>
+</svg>

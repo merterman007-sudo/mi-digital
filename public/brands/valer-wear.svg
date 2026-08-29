@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 108" role="img" aria-labelledby="title desc">
+  <title id="title">Valer Wear</title>
+  <desc id="desc">Valer Wear marka logosu</desc>
+  <path fill="#111827" d="m33 25 24 58 24-58h19L65 91H49L14 25h19Z"/>
+  <path fill="none" stroke="#c89b3c" stroke-width="5" d="m57 32 12 28-12 28-12-28 12-28Z"/>
+  <text x="110" y="64" fill="#111827" font-family="Georgia, 'Times New Roman', serif" font-size="47" font-weight="700" letter-spacing="3">VALER</text>
+  <text x="114" y="88" fill="#c89b3c" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="8">WEAR</text>
+</svg>
