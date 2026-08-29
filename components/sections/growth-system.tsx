@@ -28,18 +28,22 @@ const capabilities = [
   {
     title: "Performans Reklamları",
     description: "Meta, Google ve TikTok kampanyalarında bütçe dağılımı, teklif stratejisi ve ROAS takibi.",
+    accent: "from-cyan-400 to-sky-500",
   },
   {
     title: "Kreatif & İçerik",
     description: "Reklam görselleri, ürün anlatımı, sosyal medya akışı ve satışa dönük metin üretimi.",
+    accent: "from-fuchsia-400 to-rose-500",
   },
   {
     title: "Web & Landing Page",
     description: "Hızlı, mobil uyumlu, SEO temelli ve teklif formuna yönlendiren web deneyimleri.",
+    accent: "from-emerald-400 to-teal-500",
   },
   {
     title: "SEO & Analitik",
     description: "Arama niyeti, teknik sağlık, GA4 olayları ve aylık büyüme raporlarını tek düzende toplama.",
+    accent: "from-amber-300 to-orange-500",
   },
 ];
 
@@ -68,17 +72,17 @@ const processSteps = [
 
 export function GrowthSystemSection() {
   return (
-    <SectionReveal id="growth-system" className="mx-auto w-full max-w-[1200px] px-5 py-24 sm:px-8 lg:px-10">
+    <SectionReveal id="growth-system" className="mx-auto w-full max-w-6xl px-4 py-18 sm:px-6 lg:px-8">
       <div className="mb-8 grid gap-5 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
         <div>
-          <p className="eyebrow mb-4">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-teal-600 dark:text-teal-300">
             Dijital Etki Sistemi
           </p>
-          <h2 className="font-display text-4xl font-light leading-tight text-[#f4efd4] sm:text-5xl">
+          <h2 className="font-display text-3xl font-semibold leading-tight text-slate-950 sm:text-4xl dark:text-white">
             Reklamdan web deneyimine kadar büyüme masanız tek yerde.
           </h2>
         </div>
-        <p className="text-base leading-7 text-[#aaa696]">
+        <p className="text-base leading-7 text-slate-600 dark:text-slate-300">
           Marka takibi, bütçe yönetimi, kreatif test ve raporlama akışını ayrı ayrı
           değil, birbirini besleyen tek bir operasyon olarak yönetiyoruz.
         </p>
@@ -88,15 +92,15 @@ export function GrowthSystemSection() {
         {proofMetrics.map((metric) => (
           <article
             key={metric.label}
-            className="card-hover min-h-44 rounded-[10px] border border-[#f4efd4]/30 bg-[#111] p-5"
+            className="card-hover min-h-44 rounded-2xl border border-slate-200 bg-white/75 p-5 backdrop-blur dark:border-slate-800 dark:bg-slate-950/60"
           >
-            <p className="font-display text-4xl font-light text-[#84acfb]">
+            <p className="font-display text-4xl font-semibold text-slate-950 dark:text-white">
               {metric.value}
             </p>
-            <h3 className="mt-3 text-sm font-medium text-[#f4efd4]">
+            <h3 className="mt-3 text-sm font-semibold text-slate-900 dark:text-slate-100">
               {metric.label}
             </h3>
-            <p className="mt-2 text-sm leading-6 text-[#aaa696]">
+            <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-400">
               {metric.description}
             </p>
           </article>
@@ -107,32 +111,32 @@ export function GrowthSystemSection() {
         {capabilities.map((capability) => (
           <article
             key={capability.title}
-            className="rounded-[10px] border border-[#f4efd4]/30 bg-black p-6"
+            className="rounded-2xl border border-slate-200 bg-white/75 p-6 backdrop-blur dark:border-slate-800 dark:bg-slate-950/60"
           >
-            <div className="mb-6 h-px w-14 bg-[#84acfb]" />
-            <h3 className="font-display text-xl font-normal text-[#f4efd4]">
+            <div className={`mb-5 h-1.5 w-14 rounded-full bg-gradient-to-r ${capability.accent}`} />
+            <h3 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
               {capability.title}
             </h3>
-            <p className="mt-3 text-sm leading-6 text-[#aaa696]">
+            <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
               {capability.description}
             </p>
           </article>
         ))}
       </div>
 
-      <div className="mt-12 grid gap-10 rounded-[14px] border border-[#f4efd4]/35 bg-[#111] p-7 lg:grid-cols-[0.78fr_1.22fr] lg:p-10">
+      <div className="mt-12 grid gap-6 rounded-[28px] border border-slate-200 bg-white/80 p-6 backdrop-blur dark:border-slate-800 dark:bg-slate-950/70 lg:grid-cols-[0.78fr_1.22fr] lg:p-8">
         <div className="flex flex-col justify-between gap-6">
           <div>
-            <p className="eyebrow">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-700 dark:text-cyan-300">
               Hemen Başlayalım
             </p>
-            <h2 className="mt-4 font-display text-3xl font-light leading-tight text-[#f4efd4]">
+            <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-slate-950 dark:text-white">
               4 adımda strateji, kurulum ve ölçülebilir büyüme.
             </h2>
           </div>
           <Link
             href="/iletisim"
-            className="inline-flex w-fit rounded-full bg-[#84acfb] px-6 py-3 text-sm font-medium text-black transition hover:bg-[#a9c5ff]"
+            className="inline-flex w-fit rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
           >
             Başlangıç Görüşmesi Planla
           </Link>
@@ -142,15 +146,15 @@ export function GrowthSystemSection() {
           {processSteps.map((process) => (
             <article
               key={process.step}
-              className="rounded-[10px] border border-[#f4efd4]/25 bg-[#1a1a1a] p-5"
+              className="rounded-2xl border border-slate-200 bg-slate-50/90 p-5 dark:border-slate-800 dark:bg-slate-900/70"
             >
-              <p className="text-xs tracking-[0.18em] text-[#84acfb]">
+              <p className="font-display text-sm font-semibold text-cyan-700 dark:text-cyan-300">
                 {process.step}
               </p>
-              <h3 className="mt-3 font-display text-lg font-normal text-[#f4efd4]">
+              <h3 className="mt-3 font-display text-lg font-semibold text-slate-950 dark:text-white">
                 {process.title}
               </h3>
-              <p className="mt-2 text-sm leading-6 text-[#aaa696]">
+              <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-400">
                 {process.description}
               </p>
             </article>

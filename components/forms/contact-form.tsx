@@ -169,7 +169,7 @@ export function ContactForm() {
             value={data.message}
             onChange={handleChange}
             rows={5}
-            className="rounded-[8px] border border-[#f4efd4]/30 bg-black px-4 py-3 text-[#f4efd4] outline-none transition focus:border-[#84acfb]"
+            className="rounded-xl border border-slate-300 bg-white/70 px-4 py-3 outline-none ring-0 transition focus:border-emerald-500 dark:border-slate-700 dark:bg-slate-950/70"
             placeholder="Projenizden kısaca bahsedin..."
           />
           {errors.message ? <span className="text-xs text-red-500">{errors.message}</span> : null}
@@ -177,7 +177,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="mt-2 rounded-full bg-[#84acfb] px-6 py-3 text-sm font-medium text-black transition hover:bg-[#a9c5ff] disabled:cursor-not-allowed disabled:opacity-60"
+          className="mt-2 rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-60"
         >
           {isSubmitting ? "Gönderiliyor..." : "Teklif Al"}
         </button>
@@ -203,7 +203,7 @@ function Field({ label, name, value, error, onChange, type = "text" }: FieldProp
         name={name}
         value={value}
         onChange={onChange}
-        className="rounded-[8px] border border-[#f4efd4]/30 bg-black px-4 py-3 text-[#f4efd4] outline-none transition focus:border-[#84acfb]"
+        className="rounded-xl border border-slate-300 bg-white/70 px-4 py-3 outline-none ring-0 transition focus:border-emerald-500 dark:border-slate-700 dark:bg-slate-950/70"
       />
       {error ? <span className="text-xs text-red-500">{error}</span> : null}
     </label>

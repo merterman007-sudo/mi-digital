@@ -106,7 +106,7 @@ export function BrandMarquee({ brands }: BrandMarqueeProps) {
   return (
     <div
       ref={containerRef}
-      className="brand-mask group overflow-hidden border-y border-[#f4efd4]/30 bg-black py-6"
+      className="glass-panel brand-mask group overflow-hidden rounded-2xl border-cyan-300/30 bg-gradient-to-r from-white/70 via-cyan-50/35 to-indigo-50/40 py-5 shadow-[0_22px_70px_-46px_rgba(2,132,199,0.45)] dark:border-cyan-800/35 dark:from-slate-950/80 dark:via-slate-900/65 dark:to-slate-950/80"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -124,7 +124,7 @@ export function BrandMarquee({ brands }: BrandMarqueeProps) {
             href={brand.websiteUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex h-24 min-w-[228px] items-center justify-center rounded-[10px] border border-[#f4efd4]/25 bg-[#111] px-4 py-3 transition duration-300 hover:-translate-y-1 hover:border-[#84acfb]"
+            className="flex h-24 min-w-[228px] items-center justify-center rounded-xl border border-slate-200/90 bg-white/90 px-4 py-3 transition duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:bg-white hover:shadow-lg hover:shadow-cyan-600/15 dark:border-slate-700/90 dark:bg-slate-950/75 dark:hover:border-cyan-700/80 dark:hover:bg-slate-900/90"
             aria-label={`${brand.name} web sitesine git`}
           >
             <div

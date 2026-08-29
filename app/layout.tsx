@@ -1,6 +1,6 @@
 ﻿import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { IBM_Plex_Sans, IBM_Plex_Serif } from "next/font/google";
+import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { ToasterProvider } from "@/components/providers/toaster-provider";
@@ -10,17 +10,14 @@ import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { JsonLd } from "@/components/seo/json-ld";
 import { absoluteUrl, siteConfig } from "@/lib/site-config";
 
-const plexSans = IBM_Plex_Sans({
-  variable: "--font-plex-sans",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
 });
 
-const plexSerif = IBM_Plex_Serif({
-  variable: "--font-plex-serif",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space",
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -88,7 +85,7 @@ export default function RootLayout({
     <html
       lang="tr"
       suppressHydrationWarning
-      className={`${plexSans.variable} ${plexSerif.variable} dark h-full antialiased`}
+      className={`${jakarta.variable} ${spaceGrotesk.variable} dark h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <JsonLd data={globalSchema} />
