@@ -3,62 +3,30 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #f5f2ea;
-  --foreground: #11110f;
-  --muted: #334155;
-  --card: #fffdf8e8;
-  --card-border: #ded8ca;
-  --ring: #0f172a;
-  --accent: #0ea5e9;
-  --accent-foreground: #ecfeff;
+  --background: #000000;
+  --foreground: #f4efd4;
+  --muted: #aaa696;
+  --card: #111111;
+  --card-border: rgba(244, 239, 212, 0.32);
+  --ring: #84acfb;
+  --accent: #84acfb;
+  --accent-foreground: #000000;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-jakarta);
-  --font-display: var(--font-space);
+  --font-sans: var(--font-plex-sans);
+  --font-display: var(--font-plex-serif);
 }
 
 body {
   @apply bg-background text-foreground font-sans;
-  background-image:
-    radial-gradient(circle at 6% 3%, rgba(20, 184, 166, 0.12), transparent 28%),
-    radial-gradient(circle at 92% 7%, rgba(201, 160, 74, 0.12), transparent 30%),
-    linear-gradient(135deg, #faf8f2 0%, #f2eee4 52%, #f8f4eb 100%);
+  background: #000;
+  font-weight: 300;
 }
 
-.dark {
-  --background: #080a09;
-  --foreground: #f4f0e8;
-  --muted: #9fb1cb;
-  --card: #111513e8;
-  --card-border: #29312d;
-  --ring: #e8eefb;
-  --accent: #22d3ee;
-  --accent-foreground: #083344;
-}
-
-.dark body {
-  background-image:
-    radial-gradient(circle at 8% 5%, rgba(20, 184, 166, 0.16), transparent 30%),
-    radial-gradient(circle at 92% 6%, rgba(201, 160, 74, 0.13), transparent 31%),
-    linear-gradient(135deg, #070908 0%, #0c100e 48%, #080a09 100%);
-}
-
-body::before {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  content: "";
-  pointer-events: none;
-  opacity: 0.32;
-  background-image:
-    linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
-  background-size: 56px 56px;
-  mask-image: linear-gradient(to bottom, black, transparent 72%);
-}
+.dark { --background: #000; --foreground: #f4efd4; --muted: #aaa696; --card: #111; --card-border: rgba(244,239,212,.32); --ring: #84acfb; --accent: #84acfb; --accent-foreground: #000; }
 
 * {
   @apply border-[var(--card-border)];
@@ -69,34 +37,31 @@ html {
 }
 
 .glass-panel {
-  @apply border backdrop-blur-xl;
+  @apply border;
   background: var(--card);
   border-color: var(--card-border);
 }
 
 .gradient-text {
-  @apply bg-gradient-to-r from-teal-400 via-cyan-300 to-amber-300 bg-clip-text text-transparent;
+  color: #84acfb;
+  font-style: italic;
 }
 
-.premium-panel {
-  background: linear-gradient(145deg, rgba(17, 24, 21, 0.94), rgba(7, 10, 9, 0.97));
-  border: 1px solid rgba(94, 234, 212, 0.16);
-  box-shadow: 0 40px 110px -58px rgba(20, 184, 166, 0.5);
-}
+.premium-panel { background: #111; border: 1px solid rgba(244,239,212,.32); }
 
 .eyebrow {
-  @apply text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-700 dark:text-teal-300;
+  @apply text-[11px] font-medium uppercase tracking-[0.24em] text-[#84acfb];
 }
 
 .card-hover {
-  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  transition: transform 220ms ease, border-color 220ms ease, background-color 220ms ease;
   will-change: transform;
 }
 
 .card-hover:hover {
   transform: translateY(-6px);
-  box-shadow: 0 16px 34px rgba(8, 47, 73, 0.2);
-  border-color: rgba(34, 211, 238, 0.55);
+  border-color: #84acfb;
+  background: #151515;
 }
 
 .brand-mask {

@@ -7,11 +7,13 @@ import { services } from "@/data/services";
 
 export function ServicesSection() {
   return (
-    <SectionReveal id="services" className="mx-auto w-full max-w-6xl px-4 py-18 sm:px-6 lg:px-8">
-      <div className="mb-8 space-y-3">
+    <SectionReveal id="services" className="mx-auto w-full max-w-[1200px] px-5 py-24 sm:px-8 lg:px-10">
+      <div className="mb-12 grid gap-5 lg:grid-cols-2 lg:items-end">
+       <div>
         <p className="eyebrow">Uzmanlık Alanları</p>
-        <h2 className="font-display text-3xl font-semibold sm:text-4xl">Hizmetlerimiz</h2>
-        <p className="max-w-3xl text-slate-600 dark:text-slate-300">
+        <h2 className="mt-4 font-display text-4xl font-light leading-tight text-[#f4efd4] sm:text-5xl">Fikri, <em className="text-[#84acfb]">etkiye</em> dönüştüren disiplinler.</h2>
+       </div>
+        <p className="max-w-xl text-[#aaa696] lg:justify-self-end">
           Pazarlamadan yazılıma kadar tüm dijital büyüme ihtiyaçlarını tek ekip ile
           yönetebilmeniz için uçtan uca çözümler üretiyoruz.
         </p>
@@ -25,23 +27,22 @@ export function ServicesSection() {
           hidden: { opacity: 0 },
           show: { opacity: 1, transition: { staggerChildren: 0.08 } },
         }}
-        className="grid gap-4 md:grid-cols-2 lg:grid-cols-3"
+        className="grid gap-4 md:grid-cols-2"
       >
         {services.map((service) => (
           <motion.article
             key={service.slug}
             variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }}
-            className="card-hover glass-panel group relative overflow-hidden rounded-[24px] p-7 shadow-sm"
+            className="card-hover group relative overflow-hidden rounded-[12px] border border-[#f4efd4]/30 bg-[#111] p-8"
           >
-            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-teal-400/80 to-transparent opacity-0 transition group-hover:opacity-100" />
-            <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-full border border-teal-500/20 bg-teal-500/10 text-xs font-bold text-teal-700 dark:text-teal-300">0{services.findIndex((item) => item.slug === service.slug) + 1}</div>
-            <h3 className="mb-3 font-display text-xl font-medium">{service.title}</h3>
-            <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+            <div className="mb-10 text-xs tracking-[0.2em] text-[#84acfb]">0{services.findIndex((item) => item.slug === service.slug) + 1}</div>
+            <h3 className="mb-4 font-display text-2xl font-light text-[#f4efd4]">{service.title}</h3>
+            <p className="text-sm leading-6 text-[#aaa696]">
               {service.shortDescription}
             </p>
             <Link
               href={`/hizmetler/${service.slug}`}
-              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-teal-700 transition group-hover:gap-3 dark:text-teal-300"
+              className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-[#84acfb] transition group-hover:gap-3"
             >
               Detayı Gör <span aria-hidden="true">→</span>
             </Link>

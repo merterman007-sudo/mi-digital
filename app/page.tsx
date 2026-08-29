@@ -38,15 +38,15 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
-      <main className="flex-1 pb-10">
+      <main className="flex-1">
         <JsonLd data={homeSchema} />
         <HeroSection />
         <GrowthSystemSection />
         <ServicesSection />
         <AboutSection />
         <BrandsSection brands={brands} />
-        <section className="relative mx-auto w-full max-w-6xl px-4 pb-10 sm:px-6 lg:px-8">
-          <div className="rounded-[28px] border border-cyan-200/70 bg-gradient-to-br from-white via-cyan-50/70 to-slate-100/90 p-2 shadow-[0_20px_80px_-42px_rgba(14,116,144,0.45)] backdrop-blur dark:border-cyan-900/40 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+        <section className="relative mx-auto w-full max-w-[1200px] px-5 pb-24 sm:px-8 lg:px-10">
+          <div className="rounded-[14px] border border-[#f4efd4]/35 bg-[#111] p-2">
             <ContactSection />
           </div>
         </section>
