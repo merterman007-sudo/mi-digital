@@ -120,4 +120,10 @@ export const brands: BrandItem[] = [
     logoUrl: "/brands/goldes.png",
     websiteUrl: "https://goldes.com.tr/",
   },
+  {
+    id: "ipsala-platin-dental",
+    name: "İpsala Platin Dental",
+    logoUrl: "/brands/ipsala-platin-dental.webp",
+    websiteUrl: "https://ipsalaplatindental.com/",
+  },
 ];

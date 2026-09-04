@@ -43,6 +43,7 @@ export function BrandMarquee({ brands }: BrandMarqueeProps) {
     if (brandId === "shoeluks") return "max-h-9 max-w-[190px]";
     if (brandId === "ciello-hotel-bodrum") return "max-h-[48px] max-w-[72px]";
     if (brandId === "goldes") return "max-h-[54px] max-w-[128px]";
+    if (brandId === "ipsala-platin-dental") return "max-h-[58px] max-w-[76px]";
     return "max-h-10 max-w-[160px]";
   }
 
@@ -59,6 +60,7 @@ export function BrandMarquee({ brands }: BrandMarqueeProps) {
     if (brandId === "hadi-yap") return "scale-[0.92]";
     if (brandId === "cep-kapinda") return "scale-[0.96]";
     if (brandId === "goldes") return "scale-[1.18]";
+    if (brandId === "ipsala-platin-dental") return "scale-[1.08]";
     return "scale-100";
   }
 
@@ -76,6 +78,7 @@ export function BrandMarquee({ brands }: BrandMarqueeProps) {
         "olina",
         "shoeluks",
         "goldes",
+        "ipsala-platin-dental",
       ].includes(brandId)
     ) {
       return "bg-white dark:bg-white";
