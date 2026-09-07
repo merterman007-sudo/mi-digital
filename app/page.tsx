@@ -5,7 +5,6 @@ import { ContactSection } from "@/components/sections/contact";
 import { ServicesSection } from "@/components/sections/services";
 import { BrandsSection } from "@/components/sections/brands";
 import { AboutSection } from "@/components/sections/about";
-import { GrowthSystemSection } from "@/components/sections/growth-system";
 import { Footer } from "@/components/layout/footer";
 import { JsonLd } from "@/components/seo/json-ld";
 import { brands } from "@/data/brands";
@@ -41,7 +40,6 @@ export default function Home() {
       <main className="flex-1 pb-10">
         <JsonLd data={homeSchema} />
         <HeroSection />
-        <GrowthSystemSection />
         <ServicesSection />
         <AboutSection />
         <BrandsSection brands={brands} />

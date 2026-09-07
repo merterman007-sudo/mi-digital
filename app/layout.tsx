@@ -2,7 +2,6 @@
 import type { ReactNode } from "react";
 import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/providers/theme-provider";
 import { ToasterProvider } from "@/components/providers/toaster-provider";
 import { WhatsAppFab } from "@/components/layout/whatsapp-fab";
 import { QuoteFab } from "@/components/layout/quote-fab";
@@ -89,13 +88,11 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <JsonLd data={globalSchema} />
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <GoogleAnalytics />
           {children}
           <QuoteFab />
           <WhatsAppFab />
           <ToasterProvider />
-        </ThemeProvider>
       </body>
     </html>
   );
