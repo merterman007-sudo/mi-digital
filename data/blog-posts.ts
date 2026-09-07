@@ -590,6 +590,222 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedServiceSlugs: ["web-tasarim-gelistirme", "crm-otomasyon"],
   },
+  {
+    slug: "teknik-seo-denetimi-kontrol-listesi",
+    title: "Teknik SEO Denetimi: 2026 Kontrol Listesi ve Önceliklendirme Rehberi",
+    excerpt:
+      "Teknik SEO denetimini yalnızca hata listesi olarak değil, organik gösterim ve form talebi üreten bir büyüme planı olarak kurgulayın.",
+    description:
+      "Teknik SEO denetimi nasıl yapılır? Tarama, indeksleme, Core Web Vitals, schema, dahili link ve dönüşüm odaklı önceliklendirme adımlarını inceleyin.",
+    publishedAt: "2026-09-08",
+    updatedAt: "2026-09-08",
+    readingMinutes: 14,
+    author: "MI DIGITAL",
+    category: { name: "SEO", slug: "seo" },
+    tags: [
+      { name: "Teknik SEO", slug: "teknik-seo" },
+      { name: "SEO Denetimi", slug: "seo-denetimi" },
+      { name: "Core Web Vitals", slug: "core-web-vitals" },
+      { name: "Search Console", slug: "search-console" },
+    ],
+    sections: [
+      {
+        heading: "Teknik SEO Denetimi Neyi Çözer?",
+        paragraphs: [
+          "Teknik SEO denetimi; arama motorlarının sitenizi taramasını, anlamasını ve doğru sayfaları dizine eklemesini zorlaştıran sorunları görünür hale getirir. Ancak iyi bir denetim yalnızca 404 veya eksik title listesi değildir.",
+          "Öncelik, organik gösterimi ve ticari dönüşümü etkileyen sorunlara verilmelidir. Bir sayfanın indekslenmesi kadar, ziyaretçinin o sayfadan teklif formuna ilerleyebilmesi de ölçülmelidir.",
+        ],
+        bullets: [
+          "Taranabilirlik ve indekslenebilirlik",
+          "Sayfa deneyimi ve mobil hız",
+          "Arama niyetine uygun içerik mimarisi",
+          "Form, telefon ve WhatsApp dönüşümlerinin ölçümü",
+        ],
+      },
+      {
+        heading: "1. Tarama ve İndeksleme Kontrolleri",
+        paragraphs: [
+          "Önce robots.txt, XML sitemap, canonical etiketleri ve durum kodları birlikte incelenmelidir. Sitemap'te bulunan bir URL'nin noindex olması veya canonical'ının başka bir sayfayı göstermesi, Google'a çelişkili sinyal verir.",
+          "Search Console Sayfa Dizine Eklenme raporu; keşfedildi ancak şu an dizine eklenmedi, tarandı ancak şu an dizine eklenmedi ve yinelenen sayfa gibi durumları ayırmak için temel kaynaktır.",
+        ],
+      },
+      {
+        heading: "2. Core Web Vitals ve Mobil Deneyim",
+        paragraphs: [
+          "Mobil SEO'da hız yalnızca puan almak için değil, reklam ve organik trafiğin form talebine dönüşmesi için önemlidir. Büyük görseller, gereksiz JavaScript ve layout shift kullanıcıyı daha ilk ekranda kaybettirebilir.",
+          "LCP, INP ve CLS metriklerini birlikte değerlendirin. Görseli sıkıştırmak tek başına yeterli değildir; font yükleme, üçüncü taraf script'ler, butonların hareket etmesi ve formun kullanılabilirliği de kontrol edilmelidir.",
+        ],
+        bullets: [
+          "Mobilde yatay taşma ve okunabilirlik testi",
+          "İlk ekran görsel ve font yükleme sırası",
+          "Form alanlarının klavye ve ekran boyutlarına uyumu",
+          "Analytics ve reklam script'lerinin performans etkisi",
+        ],
+      },
+      {
+        heading: "3. Sayfa Başlığı, İçerik ve Arama Niyeti",
+        paragraphs: [
+          "Her sayfa tek bir ana arama niyetine cevap vermelidir. 'Dijital pazarlama ajansı', 'Google Ads yönetimi' ve 'İstanbul SEO ajansı' aynı sayfada eşit ağırlıkla hedeflenirse sayfanın mesajı bulanıklaşır.",
+          "Title, H1, giriş paragrafı, alt başlıklar ve dahili linkler aynı niyeti desteklemelidir. Anahtar kelimeyi tekrar tekrar yazmak yerine, kullanıcının karar vermesi için gereken kapsamı açıkça anlatmak daha güçlü bir sinyaldir.",
+        ],
+      },
+      {
+        heading: "4. Schema ve Güven Sinyalleri",
+        paragraphs: [
+          "Organization, LocalBusiness, Service, BreadcrumbList ve uygun sayfalarda FAQPage yapılandırılmış verisi arama motorlarının içeriği anlamasına yardımcı olur. Schema, sayfada gerçekten görünmeyen iddiaları eklemek için kullanılmamalıdır.",
+          "Ajans sitesi için telefon, e-posta, şehir, hizmet alanı, logo ve referans bağlantıları tutarlı olmalıdır. Farklı sayfalarda farklı marka adı veya adres yazılması güven sinyalini zayıflatır.",
+        ],
+      },
+      {
+        heading: "Denetim Sonuçlarını Nasıl Önceliklendirmeli?",
+        paragraphs: [
+          "Her hatayı aynı önemde görmek ekipleri yorar. Önce para ve görünürlük etkisi yüksek, uygulanması kolay sorunları düzeltin; ardından içerik derinliği, dahili link ve otorite çalışmalarına geçin.",
+        ],
+        bullets: [
+          "P0: Site erişimi, HTTPS, robots.txt veya sitemap sorunları",
+          "P1: İndekslenmeyen ticari sayfalar ve yanlış canonical",
+          "P2: Mobil hız, başlık hiyerarşisi ve eksik iç linkler",
+          "P3: Yeni içerik kümeleri ve dış otorite çalışmaları",
+        ],
+      },
+    ],
+    relatedServiceSlugs: ["seo-icerik-stratejisi", "web-tasarim-gelistirme"],
+  },
+  {
+    slug: "google-ads-ajansi-secimi-ve-maliyetleri",
+    title: "Google Ads Ajansı Seçimi: Maliyet, Sözleşme ve Performans Kriterleri",
+    excerpt:
+      "Google Ads ajansı seçerken yalnızca aylık yönetim ücretine değil, ölçümleme kalitesine ve iş hedeflerine bakın.",
+    description:
+      "Google Ads ajansı nasıl seçilir, ajans yönetim ücreti nasıl belirlenir ve performans hangi metriklerle ölçülür? İşletmeler için kapsamlı rehber.",
+    publishedAt: "2026-09-07",
+    updatedAt: "2026-09-08",
+    readingMinutes: 12,
+    author: "MI DIGITAL",
+    category: { name: "Google Ads", slug: "google-ads" },
+    tags: [
+      { name: "Google Ads Ajansı", slug: "google-ads-ajansi" },
+      { name: "Reklam Yönetimi", slug: "reklam-yonetimi" },
+      { name: "CPA", slug: "cpa" },
+      { name: "ROAS", slug: "roas" },
+    ],
+    sections: [
+      {
+        heading: "Google Ads Ajansı Ne Yapar?",
+        paragraphs: [
+          "Profesyonel Google Ads yönetimi reklamları açıp bütçe harcamaktan ibaret değildir. Hesap mimarisi, dönüşüm ölçümleme, anahtar kelime niyeti, reklam mesajı, landing page ve satış sonrası veri birlikte ele alınmalıdır.",
+          "İyi ajans, raporu metrik listesi olarak bırakmaz; hangi kampanyanın neden büyütüleceğini, hangisinin neden durdurulacağını ve bir sonraki testin ne olduğunu açıklar.",
+        ],
+      },
+      {
+        heading: "Ajans Ücreti ve Reklam Bütçesi Nasıl Ayrılır?",
+        paragraphs: [
+          "Reklam bütçesi Google'a ödenen medya harcamasıdır; ajans ücreti ise strateji, kurulum, optimizasyon, kreatif koordinasyon ve raporlama hizmetidir. Bu iki kalemin sözleşmede ayrı gösterilmesi şeffaflık sağlar.",
+          "Sabit ücret, reklam harcamasının yüzdesi veya karma model kullanılabilir. Doğru model işletmenin harcama ölçeğine, hesap karmaşıklığına ve ajansın üstlendiği işe göre belirlenmelidir.",
+        ],
+        bullets: [
+          "Hesap kurulumu ve ilk denetim kapsamı",
+          "Dönüşüm takibi ve GA4 entegrasyonu",
+          "Aylık kreatif ve landing page testleri",
+          "Raporlama sıklığı ve toplantı kapsamı",
+        ],
+      },
+      {
+        heading: "Sadece ROAS’a Bakmak Neden Yetmez?",
+        paragraphs: [
+          "ROAS e-ticaret için önemli bir göstergedir; fakat kâr marjı, iade oranı ve yeni müşteri oranı bilinmeden tek başına karar vermek yanıltıcı olabilir. Hizmet sektöründe ise form sayısı değil, nitelikli form ve satışa dönüşen lead daha anlamlıdır.",
+          "CPA, dönüşüm oranı, arama terimi kalitesi, lead-to-sale oranı ve müşteri edinme maliyeti birlikte izlenmelidir. Raporun sonunda mutlaka iş sonucuna bağlanan bir aksiyon bulunmalıdır.",
+        ],
+      },
+      {
+        heading: "Ajans Seçerken Sorulacak 8 Soru",
+        paragraphs: [
+          "Ajansın çalışma biçimini görüşmede netleştirmek, sonradan yaşanabilecek beklenti farklarını azaltır.",
+        ],
+        bullets: [
+          "Dönüşüm takibini kim kuracak ve doğrulayacak?",
+          "Reklam hesabı ve veriler işletmenin mülkiyetinde kalacak mı?",
+          "Arama terimleri ve negatif kelimeler ne sıklıkta incelenecek?",
+          "Hangi kampanya hedefleri ve KPI'lar raporlanacak?",
+          "Landing page veya form optimizasyonu kapsama dahil mi?",
+          "Kreatif ve reklam metni testleri nasıl planlanıyor?",
+          "Acil durumlarda iletişim ve aksiyon süresi nedir?",
+          "İlk 30 gün için ölçülebilir plan nedir?",
+        ],
+      },
+      {
+        heading: "İlk 30 Gün İçin Sağlam Başlangıç Planı",
+        paragraphs: [
+          "İlk hafta hesap, dönüşüm ve arama terimleri denetlenir. İkinci hafta kampanya yapısı ve reklam mesajları temizlenir. Üçüncü ve dördüncü haftalarda kontrollü testler, bütçe dağılımı ve nitelikli talep kalitesi değerlendirilir.",
+          "Bu yaklaşım, ilk haftada mucize sonuç vaat etmek yerine sağlam veri oluşturur. Sağlıklı veri olmadan yapılan agresif ölçekleme, bütçeyi ve öğrenme sürecini bozabilir.",
+        ],
+      },
+    ],
+    relatedServiceSlugs: ["google-ads-danismanligi", "performans-pazarlama"],
+  },
+  {
+    slug: "yerel-seo-google-isletme-profili-rehberi",
+    title: "Yerel SEO Rehberi: Google İşletme Profili ile Daha Fazla Arama ve Form",
+    excerpt:
+      "Yerel aramalarda görünürlük; Google İşletme Profili, hizmet sayfaları, yorumlar ve tutarlı işletme bilgilerinin birlikte çalışmasıyla oluşur.",
+    description:
+      "Yerel SEO ve Google İşletme Profili optimizasyonu nasıl yapılır? İstanbul'da hizmet veren işletmeler için görünürlük ve form talebi rehberi.",
+    publishedAt: "2026-09-06",
+    updatedAt: "2026-09-08",
+    readingMinutes: 11,
+    author: "MI DIGITAL",
+    category: { name: "SEO", slug: "seo" },
+    tags: [
+      { name: "Yerel SEO", slug: "yerel-seo" },
+      { name: "Google İşletme Profili", slug: "google-isletme-profili" },
+      { name: "İstanbul SEO", slug: "istanbul-seo" },
+      { name: "Yorum Yönetimi", slug: "yorum-yonetimi" },
+    ],
+    sections: [
+      {
+        heading: "Yerel SEO Neden Form Getirir?",
+        paragraphs: [
+          "Yerel arama yapan kişi genellikle karar aşamasına daha yakındır. 'İstanbul SEO ajansı', 'yakınımdaki diş kliniği' veya 'Google Ads ajansı' gibi sorgular hizmet, konum ve güven sinyalini aynı anda taşır.",
+          "Bu nedenle yerel SEO yalnızca haritada görünmek değil; doğru hizmet sayfasına yönlendirmek, telefonu ve formu kolaylaştırmak ve işletmenin güvenilirliğini kanıtlamaktır.",
+        ],
+      },
+      {
+        heading: "Google İşletme Profili Temel Kontrol Listesi",
+        paragraphs: [
+          "Profil adı, kategori, hizmetler, çalışma saatleri, telefon ve web sitesi bilgileri gerçek işletme bilgileriyle tutarlı olmalıdır. Anahtar kelime eklemek için işletme adını yapay biçimde değiştirmek yerine açıklama ve hizmet alanları kullanılmalıdır.",
+        ],
+        bullets: [
+          "Birincil ve ikincil kategorileri doğru seçin",
+          "Hizmetleri ve açıklamaları gerçek teklifinizle eşleştirin",
+          "Telefon, adres ve web sitesi bilgisini güncel tutun",
+          "Gerçek ekip, ofis ve iş fotoğrafları kullanın",
+          "Form ve arama CTA'sını mobilde test edin",
+        ],
+      },
+      {
+        heading: "Yorumlar Nasıl Organik Şekilde Artırılır?",
+        paragraphs: [
+          "Yorum istemenin en iyi yolu, hizmet tesliminden sonra doğru zamanda kısa ve dürüst bir rica göndermektir. Yorum karşılığında ödül teklif etmek veya sahte yorum üretmek uzun vadede güven ve politika riski yaratır.",
+          "Olumsuz yorumlara savunmacı olmayan, çözüm odaklı ve kişisel veri paylaşmayan yanıtlar verin. Bu yanıtlar yalnızca yorum sahibine değil, profili inceleyen yeni müşterilere de hitap eder.",
+        ],
+      },
+      {
+        heading: "Yerel SEO İçin Hizmet Sayfası Mimarisi",
+        paragraphs: [
+          "Ana sayfada tüm şehirleri ve tüm hizmetleri sıkıştırmak yerine, gerçek hizmet ve hedef bölgeler için özgün sayfalar oluşturun. İstanbul SEO ajansı sayfası, İstanbul Google Ads yönetimi sayfası ve İstanbul web tasarım ajansı sayfası farklı niyetlere cevap vermelidir.",
+          "Her sayfa aynı metnin şehir adını değiştirilmiş kopyası olmamalıdır. Hizmetin o bölgedeki müşteri problemi, süreç, teslimat ve sık sorulan sorular özgün biçimde anlatılmalıdır.",
+        ],
+      },
+      {
+        heading: "Yerel SEO Performansı Nasıl Ölçülür?",
+        paragraphs: [
+          "Search Console'da sorgu, gösterim, tıklama ve ortalama konumu izleyin. Google İşletme Profili'nde arama, web sitesi tıklaması ve yol tarifi gibi aksiyonları takip edin. En önemlisi, bu kanallardan gelen formların ve telefonların satış kalitesini CRM'de işaretleyin.",
+          "Gösterim artışı değerli bir ara sinyaldir; gerçek ticari hedef ise nitelikli talep ve satışa dönüşen görüşmedir.",
+        ],
+      },
+    ],
+    relatedServiceSlugs: ["seo-icerik-stratejisi", "web-tasarim-gelistirme", "crm-otomasyon"],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string) {
