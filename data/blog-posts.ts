@@ -806,6 +806,223 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedServiceSlugs: ["seo-icerik-stratejisi", "web-tasarim-gelistirme", "crm-otomasyon"],
   },
+  {
+    slug: "google-ads-cpc-artisi-nedenleri-ve-cozumleri",
+    title: "Google Ads CPC Artışı: Tıklama Maliyeti Neden Yükselir, Nasıl Düşürülür?",
+    excerpt: "CPC artışını yalnızca rekabete bağlamak yerine kalite, arama niyeti, teklif stratejisi ve landing page verileriyle teşhis edin.",
+    description: "Google Ads CPC artışı neden olur? Kalite puanı, reklam alaka düzeyi, rekabet, arama terimleri ve dönüşüm odaklı optimizasyonla tıklama maliyetini yönetin.",
+    publishedAt: "2026-09-05",
+    updatedAt: "2026-09-08",
+    readingMinutes: 12,
+    author: "MI DIGITAL",
+    category: { name: "Google Ads", slug: "google-ads" },
+    tags: [
+      { name: "CPC", slug: "cpc" },
+      { name: "Google Ads", slug: "google-ads" },
+      { name: "Kalite Puanı", slug: "kalite-puani" },
+      { name: "Teklif Stratejisi", slug: "teklif-stratejisi" },
+    ],
+    sections: [
+      {
+        heading: "CPC Artışı Her Zaman Kötü Müdür?",
+        paragraphs: [
+          "Tıklama maliyetinin yükselmesi tek başına kampanyanın kötüleştiği anlamına gelmez. Daha yüksek niyetli bir sorgudan gelen tıklama, daha pahalı olsa bile daha fazla form veya satış üretebilir.",
+          "Doğru teşhis için CPC'yi dönüşüm oranı, CPA, nitelikli lead oranı ve gelirle birlikte okumak gerekir. Ucuz trafik değil, hedefe ulaşan trafik optimize edilmelidir.",
+        ],
+      },
+      {
+        heading: "Google Ads CPC Neden Yükselir?",
+        paragraphs: [
+          "CPC; açık artırmadaki rekabet, sorgunun ticari değeri, cihaz ve konum, reklam sıralaması, kalite sinyalleri ve teklif stratejisinden etkilenir. Yeni rakiplerin agresifleşmesi de maliyeti artırabilir.",
+        ],
+        bullets: [
+          "Alakasız arama terimleri bütçeyi tüketiyor olabilir",
+          "Reklam metni sorgunun niyetini karşılamıyor olabilir",
+          "Landing page yavaş veya mesaj açısından kopuk olabilir",
+          "Dönüşüm verisi eksik olduğu için teklif algoritması yanılıyor olabilir",
+          "Geniş eşleme ve zayıf negatif kelime listesi kullanılabilir",
+        ],
+      },
+      {
+        heading: "CPC’yi Düşürmek İçin İlk Aksiyonlar",
+        paragraphs: [
+          "Son 30 gündeki arama terimlerini niyet gruplarına ayırın. Alakasız ve düşük niyetli sorguları negatifleyin; yüksek niyetli sorguları ayrı reklam gruplarında daha net mesajlarla yönetin.",
+        ],
+        bullets: [
+          "Arama terimi raporunu haftalık inceleyin",
+          "Reklam başlıklarını sorgu ve teklif ile eşleştirin",
+          "Mobil landing page hızını ve form akışını test edin",
+          "Dönüşüm tanımlarını birincil ve ikincil olarak ayırın",
+          "CPC yerine nitelikli dönüşüm maliyetini ana KPI yapın",
+        ],
+      },
+      {
+        heading: "CPC, CPA ve ROAS Birlikte Nasıl Okunur?",
+        paragraphs: [
+          "CPC trafik maliyetini, CPA dönüşüm maliyetini, ROAS ise reklam harcamasının gelir karşılığını anlatır. B2B veya hizmet sektöründe form kalitesi ve satışa dönüşüm oranı rapora eklenmelidir.",
+          "CPC yükselirken dönüşüm oranı daha hızlı yükseliyorsa kampanya iyileşiyor olabilir. Tek metriğe bakarak bütçe kesmek yerine funnel'ın tamamını kontrol edin.",
+        ],
+      },
+    ],
+    relatedServiceSlugs: ["google-ads-danismanligi", "performans-pazarlama"],
+  },
+  {
+    slug: "meta-ads-roas-artirma-rehberi",
+    title: "Meta Ads ROAS Artırma Rehberi: Kreatif, Kitle ve Teklif Sistemi",
+    excerpt: "Meta Ads performansını yalnızca hedef kitle değiştirerek değil, kreatif yorgunluk, teklif ve ölçümleme sistemiyle birlikte iyileştirin.",
+    description: "Meta Ads ROAS nasıl artırılır? Instagram reklamlarında kreatif test, hedef kitle, Pixel, katalog ve yeniden pazarlama stratejilerini inceleyin.",
+    publishedAt: "2026-09-04",
+    updatedAt: "2026-09-08",
+    readingMinutes: 13,
+    author: "MI DIGITAL",
+    category: { name: "Meta Ads", slug: "meta-ads" },
+    tags: [
+      { name: "Meta Ads", slug: "meta-ads" },
+      { name: "ROAS", slug: "roas" },
+      { name: "Instagram Reklamları", slug: "instagram-reklamlari" },
+      { name: "Kreatif Test", slug: "kreatif-test" },
+    ],
+    sections: [
+      {
+        heading: "Meta Ads ROAS Neyi Gösterir?",
+        paragraphs: [
+          "ROAS, reklam harcamasının ürettiği geliri gösterir; kârlılık ile aynı şey değildir. Ürün marjı, kargo, iade ve yeni müşteri değeri hesaba katılmadan yüksek ROAS yanlış bir güven yaratabilir.",
+          "E-ticarette ROAS'ın yanında katkı marjı ve yeni müşteri oranını; lead kampanyalarında ise nitelikli lead ve satışa dönüşüm oranını takip edin.",
+        ],
+      },
+      {
+        heading: "Kreatif Yorgunluğu ROAS’ı Nasıl Etkiler?",
+        paragraphs: [
+          "Aynı görsel veya videonun aynı kitleye fazla gösterilmesi frekansı yükseltir, tıklama oranını düşürür ve maliyeti artırabilir. Sorun her zaman hedef kitle değildir; mesajın ve formatın yenilenmesi gerekebilir.",
+        ],
+        bullets: [
+          "İlk 2 saniyede farklı açılar test edin",
+          "Ürün faydası, sosyal kanıt ve itiraz cevaplarını ayırın",
+          "Reels, Stories, carousel ve UGC formatlarını karşılaştırın",
+          "Kazanan fikri farklı giriş ve tekliflerle yeniden üretin",
+        ],
+      },
+      {
+        heading: "Hedef Kitle ve Kampanya Yapısı",
+        paragraphs: [
+          "Kampanya yapısı veri hacmine göre sade olmalıdır. Çok küçük kitleleri çok sayıda reklam setine bölmek öğrenmeyi yavaşlatabilir; geniş hedefleme kullanırken kreatif ve dönüşüm sinyalleri daha kritik hale gelir.",
+          "Yeni müşteri kazanımı, yeniden pazarlama ve katalog satışları ayrı iş hedefleri olarak raporlanmalıdır. Aynı ROAS hedefini bütün kampanyalara uygulamak doğru değildir.",
+        ],
+      },
+      {
+        heading: "Pixel ve Ölçümleme Kontrolü",
+        paragraphs: [
+          "Satın alma, sepete ekleme, içerik görüntüleme ve form gönderimi olaylarının doğru çalıştığını test etmeden performans kararı vermeyin. Tarayıcı kısıtları nedeniyle birinci taraf verileri ve sunucu tarafı sinyalleri de değerlendirilmelidir.",
+        ],
+      },
+    ],
+    relatedServiceSlugs: ["meta-ads-yonetimi", "performans-pazarlama"],
+  },
+  {
+    slug: "tiktok-ads-reklam-verme-rehberi",
+    title: "TikTok Ads Reklam Verme Rehberi: Marka ve Performans Kampanyaları",
+    excerpt: "TikTok Ads’te başarı, başka platformdaki reklamı kopyalamaktan değil, platformun doğal video diline uygun test sisteminden geçer.",
+    description: "TikTok Ads nasıl verilir? Kampanya hedefi, video kreatif, pixel, hedef kitle, bütçe ve performans metrikleri için uygulanabilir reklam rehberi.",
+    publishedAt: "2026-09-03",
+    updatedAt: "2026-09-08",
+    readingMinutes: 12,
+    author: "MI DIGITAL",
+    category: { name: "TikTok Ads", slug: "tiktok-ads" },
+    tags: [
+      { name: "TikTok Ads", slug: "tiktok-ads" },
+      { name: "Video Reklam", slug: "video-reklam" },
+      { name: "Kreatif Strateji", slug: "kreatif-strateji" },
+      { name: "Performans Pazarlama", slug: "performans-pazarlama" },
+    ],
+    sections: [
+      {
+        heading: "TikTok Ads Hangi Markalar İçin Uygun?",
+        paragraphs: [
+          "TikTok Ads; görsel anlatımı güçlü, hızlı test edilebilen ve ürününü kısa videoda gösterebilen markalar için önemli bir keşif ve performans kanalı olabilir. Ancak platforma girmek, aynı Meta reklamını dikey formata çevirmek değildir.",
+          "Kararı hedef kitle yaşına göre değil; satın alma davranışı, içerik üretme kapasitesi ve teklifin video içinde anlatılabilirliğine göre verin.",
+        ],
+      },
+      {
+        heading: "TikTok Reklam Kreatifi Nasıl Olmalı?",
+        paragraphs: [
+          "TikTok kullanıcıları profesyonel reklam hissini hemen fark edebilir. İlk saniyelerde problem, sonuç veya merak unsuru görünmeli; ürün faydası gerçek kullanım ve doğal bir anlatımla gösterilmelidir.",
+        ],
+        bullets: [
+          "Dikey 9:16 format ve hızlı giriş",
+          "Altyazı ve sesli anlatım birlikte",
+          "Tek videoda tek mesaj ve tek CTA",
+          "UGC, ürün demosu, karşılaştırma ve yorum formatları",
+          "Aynı fikrin farklı açılışlarla varyasyonları",
+        ],
+      },
+      {
+        heading: "TikTok Ads Performans Metrikleri",
+        paragraphs: [
+          "Video izlenme oranı ve ilk saniye tutma oranı kreatifin dikkat gücünü; CTR ve landing page görüntüleme kalitesi mesajın devamını; CPA, ROAS ve satışa dönüşüm oranı ise ticari sonucu gösterir.",
+          "Marka kampanyalarında erişim ve izlenme değerliyken, performans kampanyalarında yeni müşteri kalitesi de değerlendirilmelidir.",
+        ],
+      },
+      {
+        heading: "TikTok Ads ile Diğer Kanallar Birlikte Nasıl Kullanılır?",
+        paragraphs: [
+          "TikTok yeni talep ve dikkat üretirken Google Ads aktif arama niyetini yakalayabilir, Meta Ads yeniden pazarlama ve teklif testini destekleyebilir. UTM adlandırması ve ortak dönüşüm tanımları kurulmadan kanallar arası katkı doğru okunamaz.",
+        ],
+      },
+    ],
+    relatedServiceSlugs: ["meta-ads-yonetimi", "performans-pazarlama", "crm-otomasyon"],
+  },
+  {
+    slug: "reklam-performans-metrikleri-kpi-rehberi",
+    title: "Reklam Performans Metrikleri: CPC, CTR, CPA, ROAS ve KPI Rehberi",
+    excerpt: "Reklam raporunu metrik kalabalığına çevirmeden, doğru KPI’larla hangi kampanyaya ne aksiyon alınacağını görün.",
+    description: "CPC, CTR, CPM, CPA, dönüşüm oranı, ROAS ve müşteri edinme maliyeti nasıl yorumlanır? Google, Meta ve TikTok reklamları için performans metriği rehberi.",
+    publishedAt: "2026-09-02",
+    updatedAt: "2026-09-08",
+    readingMinutes: 13,
+    author: "MI DIGITAL",
+    category: { name: "Performans Pazarlama", slug: "performans-pazarlama" },
+    tags: [
+      { name: "CPC", slug: "cpc" },
+      { name: "CTR", slug: "ctr" },
+      { name: "CPA", slug: "cpa" },
+      { name: "ROAS", slug: "roas" },
+      { name: "KPI", slug: "kpi" },
+    ],
+    sections: [
+      {
+        heading: "Her İşletmenin KPI’ı Aynı Değildir",
+        paragraphs: [
+          "E-ticaret için gelir ve katkı marjı, hizmet işletmesi için nitelikli form ve satışa dönüşüm, marka kampanyası için erişim ve hatırlanırlık daha anlamlı olabilir. Raporu platformun sunduğu tüm metriklerle doldurmak yerine iş hedefinden geriye doğru kurun.",
+        ],
+      },
+      {
+        heading: "CPC, CPM, CTR ve Dönüşüm Oranı",
+        paragraphs: [
+          "CPC bir tıklamanın maliyetini, CPM bin gösterimin maliyetini, CTR reklamın dikkat gücünü ve dönüşüm oranı sayfanın ikna kabiliyetini anlatır. CPC düşük diye trafik kaliteli değildir; tıklamaların sayfada ne yaptığı kontrol edilmelidir.",
+          "CTR yüksek ama dönüşüm düşükse reklam vaadi ile landing page arasında kopukluk olabilir. CTR düşük ama dönüşüm oranı yüksekse daha uygun kullanıcıya ulaşacak başlık ve kreatif testleri denenebilir.",
+        ],
+      },
+      {
+        heading: "CPA, CAC ve ROAS Arasındaki Fark",
+        paragraphs: [
+          "CPA bir dönüşümün maliyetidir. CAC ise yeni müşteriyi kazanmak için reklam, satış ve pazarlama maliyetlerinin daha geniş toplamıdır. ROAS reklam harcamasına karşı oluşan geliri gösterir; kârlılık için ürün marjı, indirim, iade ve müşteri yaşam boyu değeri de hesaba katılmalıdır.",
+        ],
+      },
+      {
+        heading: "Haftalık Reklam Raporu Nasıl Aksiyon Üretir?",
+        paragraphs: [
+          "İyi rapor; ne oldu, neden oldu ve şimdi ne yapacağız sorularını cevaplar. Her kanal için en iyi kampanyalar, riskli sinyaller ve gelecek haftanın test hipotezi yazılmalıdır.",
+        ],
+        bullets: [
+          "Sonuç: harcama, dönüşüm, gelir ve maliyet",
+          "Teşhis: sorgu, kitle, kreatif ve sayfa kalitesi",
+          "Karar: durdur, koru, test et veya ölçekle",
+          "Takip: sorumlu kişi, tarih ve beklenen sinyal",
+        ],
+      },
+    ],
+    relatedServiceSlugs: ["performans-pazarlama", "google-ads-danismanligi", "meta-ads-yonetimi"],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string) {
