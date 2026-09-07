@@ -26,6 +26,8 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  applicationName: siteConfig.name,
+  category: "business",
   alternates: {
     canonical: absoluteUrl("/"),
   },
@@ -36,12 +38,15 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     type: "website",
     locale: siteConfig.locale,
+    images: [{ url: absoluteUrl(siteConfig.logo), width: 632, height: 632, alt: "MI Digital logosu" }],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
+    images: [absoluteUrl(siteConfig.logo)],
   },
+  icons: { icon: siteConfig.logo, apple: siteConfig.logo },
   robots: {
     index: true,
     follow: true,
@@ -57,13 +62,14 @@ const globalSchema = [
     url: siteConfig.url,
     email: siteConfig.email,
     telephone: siteConfig.phone,
+    logo: absoluteUrl(siteConfig.logo),
     sameAs: siteConfig.sameAs,
   },
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: siteConfig.name,
-    image: absoluteUrl("/next.svg"),
+    image: absoluteUrl(siteConfig.logo),
     url: siteConfig.url,
     telephone: siteConfig.phone,
     address: {

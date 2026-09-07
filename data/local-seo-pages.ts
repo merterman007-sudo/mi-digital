@@ -101,6 +101,60 @@ export const localSeoPages: LocalSeoPage[] = [
     ],
     relatedServiceSlug: "performans-pazarlama",
   },
+  {
+    slug: "istanbul-meta-ads-ajansi",
+    city: "İstanbul",
+    serviceTitle: "Meta Ads Ajansı",
+    seoTitle: "İstanbul Meta Ads Ajansı",
+    description:
+      "İstanbul Meta Ads ajansı MI DIGITAL ile Instagram ve Facebook reklamlarında kreatif test, doğru ölçümleme ve nitelikli müşteri kazanımı.",
+    intro:
+      "Meta reklamlarında sürdürülebilir performans; hedef kitle, teklif, kreatif ve dönüşüm sinyallerinin aynı plan içinde yönetilmesiyle oluşur.",
+    bullets: [
+      "Instagram ve Facebook reklam hesabı denetimi",
+      "Pixel, katalog ve dönüşüm olaylarının kontrolü",
+      "Kreatif test planı ve hedef kitle mimarisi",
+      "Lead, satış ve yeniden pazarlama kampanyaları",
+    ],
+    faq: [
+      {
+        question: "Meta Ads ajansı seçerken nelere bakılmalı?",
+        answer: "Ajansın medya satın almanın yanında kreatif test, ölçümleme ve landing page dönüşümünü de birlikte yönetebilmesi önemlidir.",
+      },
+      {
+        question: "Instagram reklamları ne zaman sonuç verir?",
+        answer: "İlk sinyaller kısa sürede görülse de sağlıklı optimizasyon için yeterli dönüşüm verisi ve kontrollü test süreci gerekir.",
+      },
+    ],
+    relatedServiceSlug: "meta-ads-yonetimi",
+  },
+  {
+    slug: "istanbul-web-tasarim-ajansi",
+    city: "İstanbul",
+    serviceTitle: "Web Tasarım Ajansı",
+    seoTitle: "İstanbul Web Tasarım Ajansı",
+    description:
+      "İstanbul web tasarım ajansı MI DIGITAL ile hızlı, mobil uyumlu, SEO temelli ve form dönüşümüne odaklanan kurumsal web sitesi.",
+    intro:
+      "İyi bir ajans sitesi yalnızca şık görünmemeli; mobilde hızlı açılmalı, hizmeti açık anlatmalı ve ziyaretçiyi doğru teklif formuna yönlendirmelidir.",
+    bullets: [
+      "Mobil-first UX ve arayüz tasarımı",
+      "Next.js tabanlı hızlı ve güvenli geliştirme",
+      "Teknik SEO, schema ve dönüşüm ölçümleme",
+      "Form, WhatsApp ve landing page optimizasyonu",
+    ],
+    faq: [
+      {
+        question: "Kurumsal web sitesi ne kadar sürede hazırlanır?",
+        answer: "Kapsam, içerik ve entegrasyonlara göre değişmekle birlikte standart projelerde planlama sonrasında net bir teslim takvimi oluşturulur.",
+      },
+      {
+        question: "Yeni site SEO uyumlu olur mu?",
+        answer: "Evet. Sayfa mimarisi, metadata, dahili bağlantılar, schema ve performans gereksinimleri geliştirme sürecine baştan dahil edilir.",
+      },
+    ],
+    relatedServiceSlug: "web-tasarim-gelistirme",
+  },
 ];
 
 export function getLocalSeoPageBySlug(slug: string) {

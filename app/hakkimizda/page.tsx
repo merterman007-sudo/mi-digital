@@ -14,11 +14,11 @@ export const metadata: Metadata = createPageMetadata({
   keywords: ["dijital ajans ekibi", "ajans vizyonu", "mi digital"],
 });
 
-const stats = [
-  { label: "Tamamlanan Proje", value: "120+" },
-  { label: "Aktif İş Ortağı", value: "34" },
-  { label: "Sektör Deneyimi", value: "8 Yıl" },
-  { label: "Ortalama ROAS", value: "4.2x" },
+const principles = [
+  { label: "Strateji", value: "Net hedef" },
+  { label: "Performans", value: "Doğru ölçüm" },
+  { label: "Kreatif", value: "Sürekli test" },
+  { label: "İletişim", value: "Şeffaf süreç" },
 ];
 
 const aboutSchema = {
@@ -53,12 +53,12 @@ export default function AboutPage() {
         />
 
         <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {stats.map((stat) => (
-            <article key={stat.label} className="glass-panel rounded-2xl p-5 card-hover">
+          {principles.map((principle) => (
+            <article key={principle.label} className="glass-panel rounded-2xl p-5 card-hover">
               <p className="text-xs uppercase tracking-[0.14em] text-slate-500 dark:text-slate-400">
-                {stat.label}
+                {principle.label}
               </p>
-              <p className="mt-2 font-display text-3xl font-semibold">{stat.value}</p>
+              <p className="mt-2 font-display text-2xl font-semibold">{principle.value}</p>
             </article>
           ))}
         </section>

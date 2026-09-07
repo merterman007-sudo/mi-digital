@@ -163,9 +163,70 @@ export const services: ServiceItem[] = [
       "satış otomasyonu",
     ],
   },
+  {
+    slug: "google-ads-danismanligi",
+    title: "Google Ads Danışmanlığı",
+    shortDescription:
+      "Arama, Performance Max ve yeniden pazarlama kampanyalarında doğru ölçümleme ve verimli bütçe yönetimi.",
+    longDescription:
+      "Google Ads hesaplarını arama niyetine göre yapılandırıyor; dönüşüm takibi, negatif anahtar kelime yönetimi, reklam metinleri ve teklif stratejisini birlikte optimize ediyoruz. Amaç yalnızca tıklama değil, satışa veya nitelikli forma dönüşen trafik üretmektir.",
+    process: [
+      "Hesap, pazar ve rakip analizi",
+      "Dönüşüm takibi ve kampanya mimarisi",
+      "Arama terimi ve negatif kelime optimizasyonu",
+      "Haftalık bütçe, teklif ve dönüşüm iyileştirmesi",
+    ],
+    deliverables: [
+      "Google Ads hesap denetimi",
+      "Kampanya ve reklam grubu yapısı",
+      "Dönüşüm ve UTM ölçümleme planı",
+      "Aylık performans ve aksiyon raporu",
+    ],
+    faq: [
+      {
+        question: "Google Ads yönetim ücretine reklam bütçesi dahil mi?",
+        answer: "Hayır. Medya bütçesi doğrudan Google'a ödenir; ajans hizmeti hesap kurulumu, yönetim, optimizasyon ve raporlamayı kapsar.",
+      },
+      {
+        question: "Mevcut Google Ads hesabımızı devralabilir misiniz?",
+        answer: "Evet. Önce mevcut hesabı ve dönüşüm kurulumunu denetler, veri kaybı oluşturmadan iyileştirme planını uygularız.",
+      },
+    ],
+    keywords: ["google ads ajansı", "google reklam danışmanlığı", "google ads yönetimi"],
+  },
+  {
+    slug: "meta-ads-yonetimi",
+    title: "Meta Ads Yönetimi",
+    shortDescription:
+      "Instagram ve Facebook reklamlarında kreatif test, hedef kitle ve satış hunisi odaklı performans yönetimi.",
+    longDescription:
+      "Meta Ads kampanyalarını marka mesajı, kreatif varyasyon, Pixel ve Conversions API sinyalleriyle birlikte ele alıyoruz. Yeni müşteri kazanımı, yeniden pazarlama ve katalog satışlarını ayrı hedeflerle yöneterek sürdürülebilir öğrenme sistemi kuruyoruz.",
+    process: [
+      "Pixel, katalog ve olay ölçümleme kontrolü",
+      "Hedef kitle ve teklif stratejisi",
+      "Kreatif test matrisi ve kampanya kurulumu",
+      "Haftalık ölçekleme ve maliyet optimizasyonu",
+    ],
+    deliverables: [
+      "Meta reklam hesabı denetimi",
+      "Kampanya ve hedef kitle mimarisi",
+      "Kreatif test ve içerik önerileri",
+      "Satış, lead ve ROAS raporlaması",
+    ],
+    faq: [
+      {
+        question: "Instagram reklamlarında kaç kreatif test edilmeli?",
+        answer: "Bütçe ve ürün sayısına göre değişir. İlk aşamada farklı mesaj ve formatları temsil eden kontrollü bir kreatif matrisiyle başlarız.",
+      },
+      {
+        question: "Meta Pixel kurulumu hizmete dahil mi?",
+        answer: "Evet. Mevcut kurulum denetlenir; gerekli web olayları ve dönüşüm öncelikleri kampanya hedefleriyle uyumlu hale getirilir.",
+      },
+    ],
+    keywords: ["meta ads ajansı", "instagram reklam yönetimi", "facebook reklam ajansı"],
+  },
 ];
 
 export function getServiceBySlug(slug: string) {
   return services.find((service) => service.slug === slug);
 }
-

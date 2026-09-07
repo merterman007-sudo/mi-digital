@@ -14,21 +14,18 @@ export const siteConfig = {
   name: "MI DIGITAL",
   legalName: "MI DIGITAL Ajans Hizmetleri",
   description:
-    "MI DIGITAL, performans pazarlama, yazılım geliştirme ve büyüme stratejisi alanlarında uçtan uca dijital ajans hizmeti sunar.",
+    "İstanbul merkezli MI DIGITAL; Google Ads, Meta Ads, SEO, kreatif üretim ve web geliştirme hizmetleri sunan dijital pazarlama ajansıdır.",
   url: normalizeSiteUrl(rawSiteUrl),
   locale: "tr_TR",
   country: "TR",
   city: "Istanbul",
   phone: "+90 543 712 83 66",
   email: "merterman035@gmail.com",
-  sameAs: [
-    "https://www.instagram.com/",
-    "https://www.linkedin.com/",
-  ],
+  logo: "/brand/mi-digital-logo.jpg",
+  sameAs: [],
 } as const;
 
 export function absoluteUrl(path = "/") {
   const cleanPath = path.startsWith("/") ? path : `/${path}`;
   return `${siteConfig.url}${cleanPath}`;
 }
-

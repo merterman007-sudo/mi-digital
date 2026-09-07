@@ -30,12 +30,13 @@ export function createPageMetadata({
       siteName: siteConfig.name,
       locale: siteConfig.locale,
       type: "website",
+      images: [{ url: absoluteUrl(siteConfig.logo), width: 632, height: 632, alt: "MI Digital logosu" }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: [absoluteUrl(siteConfig.logo)],
     },
   };
 }
-

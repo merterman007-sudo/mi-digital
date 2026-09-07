@@ -12,15 +12,18 @@ import { createPageMetadata } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-config";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Dijital Ajans ve Büyüme Ortağı",
+  title: "Dijital Pazarlama Ajansı | Google Ads, Meta Ads ve SEO",
   description:
-    "MI DIGITAL ile performans reklamları, SEO, kreatif üretim ve web geliştirmeyi tek ekipte yöneterek markanızı ölçeklenebilir şekilde büyütün.",
+    "İstanbul dijital pazarlama ajansı MI DIGITAL; Google Ads, Meta Ads, SEO, kreatif ve web geliştirme hizmetleriyle nitelikli trafik ve form talebi üretir.",
   path: "/",
   keywords: [
     "dijital ajans",
     "performans pazarlama ajansı",
     "seo ajansı",
     "web geliştirme",
+    "google ads ajansı",
+    "meta ads ajansı",
+    "istanbul dijital pazarlama ajansı",
   ],
 });
 
