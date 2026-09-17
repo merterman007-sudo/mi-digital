@@ -1,11 +1,23 @@
 "use client";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { trackEvent } from "@/lib/gtag";
-const disciplines = ["Performance", "Creative", "Web", "SEO"];
+
 export function HeroSection() {
-  return <section className="hero-shell"><div className="hero-glow" /><div className="site-container relative grid items-end gap-12 pb-16 pt-14 md:pb-24 md:pt-24 lg:grid-cols-[1.25fr_.75fr] lg:gap-20">
-    <motion.div initial={{opacity:0,y:24}} animate={{opacity:1,y:0}} transition={{duration:.65}}><p className="eyebrow"><span /> İstanbul dijital pazarlama ajansı</p><h1 className="hero-title">Dijitalde görünür değil, <em>vazgeçilmez</em> olun.</h1><p className="hero-copy">Google Ads, Meta Ads, SEO, kreatif ve web geliştirmeyi aynı büyüme planında birleştiriyoruz. Daha nitelikli trafik, daha fazla form talebi ve ölçülebilir satış için tek ekiple çalışın.</p><div className="mt-8 flex flex-col gap-3 min-[420px]:flex-row"><Link href="/iletisim" onClick={()=>trackEvent("cta_click_service",{cta_target:"/iletisim",cta_placement:"home_hero"})} className="button-primary">Birlikte büyüyelim <span>↗</span></Link><Link href="#brands" className="button-secondary">İşlerimizi incele</Link></div></motion.div>
-    <motion.aside initial={{opacity:0,y:28}} animate={{opacity:1,y:0}} transition={{duration:.7,delay:.12}} className="hero-card"><div className="flex items-center justify-between border-b border-white/10 pb-5"><p className="text-xs uppercase tracking-[.2em] text-white/50">MI / Growth system</p><span className="status-dot">Aktif</span></div><p className="mt-7 font-display text-3xl leading-tight">Fikirden sonuca<br/>tek ekip, tek sistem.</p><div className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10">{disciplines.map((x,i)=><div key={x} className="bg-[#0b1718] p-4 text-sm text-white/80"><span className="mb-5 block text-[10px] text-[#5eead4]">0{i+1}</span>{x}</div>)}</div></motion.aside>
-  </div></section>;
+  return (
+    <section className="hero-shell">
+      <div className="hero-glow" />
+      <div className="site-container relative py-20 md:py-32">
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .65 }}>
+          <p className="eyebrow"><span /> MI Digital · Bağımsız dijital büyüme ajansı</p>
+          <h1 className="hero-title !max-w-[1080px]">Markaları<br /><em>sonuca</em> taşıyoruz.</h1>
+          <div className="mt-10 flex flex-col justify-between gap-8 border-t border-white/15 pt-8 md:flex-row md:items-end">
+            <p className="hero-copy !mt-0">Medya, yaratıcılık ve veriyi aynı masada buluşturuyoruz. Google Ads, Meta Ads, TikTok, programatik ve diğer kanallarda markanıza özel büyüme planı kuruyoruz.</p>
+            <div className="flex shrink-0 flex-wrap gap-3"><Link href="/iletisim" onClick={() => trackEvent("cta_click_service", { cta_target: "/iletisim", cta_placement: "home_hero" })} className="button-primary">Birlikte çalışalım <span>↗</span></Link><Link href="#services" className="button-secondary">Hizmetleri keşfet</Link></div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
 }

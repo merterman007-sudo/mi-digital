@@ -12,7 +12,7 @@ import { absoluteUrl, siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = createPageMetadata({
   title: "Dijital Ajans Hizmetleri",
   description:
-    "MI DIGITAL performans pazarlama, SEO, web geliştirme ve CRM otomasyon hizmetlerini uçtan uca sunar.",
+    "MI Digital ile Google Ads, Meta Ads, TikTok Ads, Yandex Direct, Yango Ads, Criteo, programatik reklamcılık, SEO ve web hizmetlerini keşfedin.",
   path: "/hizmetler",
   keywords: [
     "dijital ajans hizmetleri",
@@ -65,14 +65,14 @@ export default function ServicesPage() {
             <article key={service.slug} className="glass-panel card-hover rounded-2xl p-6">
               <div className="mb-4 h-1.5 w-12 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500" />
               <h2 className="font-display text-xl font-semibold">{service.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-slate-700 dark:text-slate-300">
+              <p className="mt-3 text-base leading-7 text-slate-300">
                 {service.longDescription}
               </p>
               <div className="mt-5 flex flex-wrap items-center gap-2">
                 {service.keywords.slice(0, 3).map((keyword) => (
                   <span
                     key={keyword}
-                    className="rounded-full border border-cyan-200/70 bg-cyan-50/60 px-3 py-1 text-xs text-cyan-900 dark:border-cyan-900/60 dark:bg-cyan-900/20 dark:text-cyan-200"
+                    className="rounded-full border border-cyan-900/60 bg-cyan-900/20 px-3 py-1 text-xs text-cyan-200"
                   >
                     {keyword}
                   </span>
@@ -80,7 +80,7 @@ export default function ServicesPage() {
               </div>
               <Link
                 href={`/hizmetler/${service.slug}`}
-                className="mt-6 inline-flex rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700"
+                className="mt-6 inline-flex rounded-full bg-teal-300 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-teal-200"
               >
                 Hizmet Detayını Gör
               </Link>

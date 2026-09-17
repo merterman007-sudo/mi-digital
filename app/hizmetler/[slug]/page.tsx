@@ -131,10 +131,10 @@ export default async function ServiceDetailPage({
           variant="cyan"
         />
 
-        <section className="grid gap-6 md:grid-cols-2">
+        <section className="service-detail-grid grid gap-6 md:grid-cols-2">
           <article className="glass-panel rounded-2xl p-6">
             <h2 className="font-display text-2xl font-semibold">Süreç Adımları</h2>
-            <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-700 dark:text-slate-300">
+            <ul className="mt-4 space-y-3 text-base leading-7">
               {service.process.map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <span className="mt-2 h-2 w-2 rounded-full bg-cyan-500" />
@@ -146,7 +146,7 @@ export default async function ServiceDetailPage({
 
           <article className="glass-panel rounded-2xl p-6">
             <h2 className="font-display text-2xl font-semibold">Teslimatlar</h2>
-            <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-700 dark:text-slate-300">
+            <ul className="mt-4 space-y-3 text-base leading-7">
               {service.deliverables.map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <span className="mt-2 h-2 w-2 rounded-full bg-indigo-500" />
@@ -157,18 +157,17 @@ export default async function ServiceDetailPage({
           </article>
         </section>
 
-        <section className="glass-panel rounded-2xl p-6">
+        <section className="service-faq rounded-2xl p-6">
           <h2 className="font-display text-2xl font-semibold">Sık Sorulan Sorular</h2>
           <div className="mt-4 space-y-4">
             {service.faq.map((item) => (
               <article
                 key={item.question}
-                className="rounded-xl border border-slate-200/70 bg-white/70 p-4 dark:border-slate-700 dark:bg-slate-900/50"
               >
-                <h3 className="font-semibold text-slate-900 dark:text-slate-100">
+                <h3 className="font-semibold text-white">
                   {item.question}
                 </h3>
-                <p className="mt-2 text-sm text-slate-700 dark:text-slate-300">
+                <p className="mt-2 text-base leading-7">
                   {item.answer}
                 </p>
               </article>
@@ -206,4 +205,3 @@ export default async function ServiceDetailPage({
     </div>
   );
 }
-

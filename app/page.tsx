@@ -12,9 +12,9 @@ import { createPageMetadata } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-config";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Dijital Pazarlama Ajansı | Google Ads, Meta Ads ve SEO",
+  title: "Dijital Pazarlama Ajansı | Google, Meta, TikTok ve Programatik",
   description:
-    "İstanbul dijital pazarlama ajansı MI DIGITAL; Google Ads, Meta Ads, SEO, kreatif ve web geliştirme hizmetleriyle nitelikli trafik ve form talebi üretir.",
+    "MI Digital; Google Ads, Meta Ads, TikTok Ads, Yandex, Yango, Criteo ve programatik reklamcılık için strateji, kreatif, ölçümleme ve kampanya yönetimi sunar.",
   path: "/",
   keywords: [
     "dijital ajans",
@@ -23,6 +23,11 @@ export const metadata: Metadata = createPageMetadata({
     "web geliştirme",
     "google ads ajansı",
     "meta ads ajansı",
+    "tiktok ads ajansı",
+    "yandex direct ajansı",
+    "yango ads ajansı",
+    "criteo ajansı",
+    "programatik reklam ajansı",
     "istanbul dijital pazarlama ajansı",
   ],
 });

@@ -23,7 +23,7 @@ export function Navbar() {
         <Link href="/" className="brand-mark" aria-label="MI Digital ana sayfa">
           <span className="brand-logo-frame">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/brand/mi-digital-logo.jpg" alt="MI Digital" />
+            <img src="/brand/mi-digital-logo.jpg" alt="MI Digital" style={{ objectFit: "cover", objectPosition: "center" }} />
           </span>
         </Link>
         <nav className="hidden items-center gap-7 md:flex">

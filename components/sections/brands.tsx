@@ -1,3 +1,25 @@
-/* eslint-disable @next/next/no-img-element */
 import type { BrandItem } from "@/data/brands";
-export function BrandsSection({brands}:{brands:BrandItem[]}){return <section id="brands" className="section-space border-y border-white/10 bg-[#091415]"><div className="site-container"><div className="section-heading"><div><p className="eyebrow"><span/> Referanslar</p><h2>Birlikte değer<br/>ürettiğimiz markalar.</h2></div><p>Farklı sektörlerden iş ortaklarımızın dijital dünyadaki büyüme yolculuğuna eşlik ediyoruz.</p></div><div className="brand-grid">{brands.map(b=><a key={b.id} href={b.websiteUrl} target="_blank" rel="noreferrer" aria-label={`${b.name} web sitesi`} className="brand-card"><img src={b.logoUrl} alt={`${b.name} logosu`} loading="lazy"/><span>{b.name}</span></a>)}</div></div></section>}
+
+export function BrandsSection({ brands }: { brands: BrandItem[] }) {
+  const loop = [...brands, ...brands];
+  return (
+    <section id="brands" className="section-space border-y border-white/10 bg-[#0a1516]">
+      <div className="site-container">
+        <div className="section-heading">
+          <div><p className="eyebrow"><span /> Birlikte çalıştığımız markalar</p><h2>Güçlü iş birlikleri,<br />ölçülebilir büyüme.</h2></div>
+          <p>Her markanın hedefi farklı. Stratejiyi, mecrayı ve ölçümlemeyi buna göre şekillendiriyoruz.</p>
+        </div>
+      </div>
+      <div className="brand-marquee" aria-label="Güncel müşterilerimiz">
+        <div className="brand-marquee-track">
+          {loop.map((brand, index) => (
+            <a className="brand-tile" href={brand.websiteUrl} target="_blank" rel="noopener noreferrer" key={`${brand.id}-${index}`} aria-label={`${brand.name} web sitesi`} aria-hidden={index >= brands.length ? true : undefined} tabIndex={index >= brands.length ? -1 : undefined}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={brand.logoUrl} alt={index < brands.length ? `${brand.name} logosu` : ""} loading="lazy" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
