@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/footer";
 import { ConversionCta } from "@/components/blog/conversion-cta";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
-import { blogPosts, getBlogTags } from "@/data/blog-posts";
+import { blogPosts, getBlogTagPostCount, getBlogTags } from "@/data/blog-posts";
 import { createPageMetadata } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-config";
 
@@ -30,12 +30,15 @@ export async function generateMetadata({ params }: BlogTagPageProps): Promise<Me
     });
   }
 
-  return createPageMetadata({
+  const metadata = createPageMetadata({
     title: `${tag.name} Etiketli Yazılar`,
     description: `${tag.name} etiketiyle ilişkili tüm MI DIGITAL içerikleri.`,
     path: `/blog/etiket/${tag.slug}`,
     keywords: [tag.name, "blog etiketi"],
   });
+  return getBlogTagPostCount(tag.slug) < 2
+    ? { ...metadata, robots: { index: false, follow: true } }
+    : metadata;
 }
 
 export default async function BlogTagPage({ params }: BlogTagPageProps) {

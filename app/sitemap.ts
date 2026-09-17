@@ -1,5 +1,5 @@
 ﻿import type { MetadataRoute } from "next";
-import { blogPosts, getBlogCategories, getBlogTags } from "@/data/blog-posts";
+import { blogPosts, getBlogCategories, getBlogTagPostCount, getBlogTags } from "@/data/blog-posts";
 import { localSeoPages } from "@/data/local-seo-pages";
 import { services } from "@/data/services";
 import { absoluteUrl } from "@/lib/site-config";
@@ -21,7 +21,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categoryRoutes = getBlogCategories().map(
     (category) => `/blog/kategori/${category.slug}`,
   );
-  const tagRoutes = getBlogTags().map((tag) => `/blog/etiket/${tag.slug}`);
+  const tagRoutes = getBlogTags()
+    .filter((tag) => getBlogTagPostCount(tag.slug) >= 2)
+    .map((tag) => `/blog/etiket/${tag.slug}`);
   const localRoutes = localSeoPages.map((item) => `/lokasyon/${item.slug}`);
 
   const allRoutes = [

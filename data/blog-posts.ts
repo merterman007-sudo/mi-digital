@@ -1053,3 +1053,7 @@ export function getBlogTags() {
   }
   return [...map.values()];
 }
+
+export function getBlogTagPostCount(slug: string) {
+  return blogPosts.filter((post) => post.tags.some((tag) => tag.slug === slug)).length;
+}

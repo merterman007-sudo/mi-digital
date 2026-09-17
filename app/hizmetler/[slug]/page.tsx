@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
 import { blogPosts } from "@/data/blog-posts";
 import { getServiceBySlug, services } from "@/data/services";
+import { serviceGuides } from "@/data/service-guides";
 import { createPageMetadata } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site-config";
 
@@ -54,6 +55,10 @@ export default async function ServiceDetailPage({
   const relatedPosts = blogPosts.filter((post) =>
     post.relatedServiceSlugs.includes(service.slug),
   );
+  const guide = serviceGuides[service.slug];
+  const relatedServices = guide
+    ? guide.relatedSlugs.map(getServiceBySlug).filter((item) => item !== undefined)
+    : [];
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -131,6 +136,26 @@ export default async function ServiceDetailPage({
           variant="cyan"
         />
 
+        {guide ? (
+          <section className="space-y-5" aria-label={`${service.title} yaklaşımımız`}>
+            {guide.sections.map((section) => (
+              <article key={section.heading} className="glass-panel rounded-2xl p-6 md:p-8">
+                <h2 className="font-display text-2xl font-semibold">{section.heading}</h2>
+                <div className="mt-4 space-y-4 text-base leading-8 text-slate-300">
+                  {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                </div>
+                {section.points ? (
+                  <ul className="mt-5 grid gap-3 md:grid-cols-3">
+                    {section.points.map((point) => (
+                      <li key={point} className="rounded-xl border border-cyan-900/50 bg-cyan-950/20 p-4 text-sm leading-6 text-slate-200">{point}</li>
+                    ))}
+                  </ul>
+                ) : null}
+              </article>
+            ))}
+          </section>
+        ) : null}
+
         <section className="service-detail-grid grid gap-6 md:grid-cols-2">
           <article className="glass-panel rounded-2xl p-6">
             <h2 className="font-display text-2xl font-semibold">Süreç Adımları</h2>
@@ -156,6 +181,19 @@ export default async function ServiceDetailPage({
             </ul>
           </article>
         </section>
+
+        {relatedServices.length > 0 ? (
+          <section className="glass-panel rounded-2xl p-6">
+            <h2 className="font-display text-2xl font-semibold">İlgili Hizmetler</h2>
+            <div className="mt-4 flex flex-wrap gap-3">
+              {relatedServices.map((item) => (
+                <Link key={item.slug} href={`/hizmetler/${item.slug}`} className="rounded-full border border-cyan-900/60 bg-cyan-900/20 px-4 py-2 text-sm font-medium text-cyan-200 transition hover:bg-cyan-900/40">
+                  {item.title} ↗
+                </Link>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         <section className="service-faq rounded-2xl p-6">
           <h2 className="font-display text-2xl font-semibold">Sık Sorulan Sorular</h2>
