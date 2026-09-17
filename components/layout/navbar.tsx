@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useScroll } from "framer-motion";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -16,15 +16,14 @@ const navItems = [
 export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const { scrollYProgress } = useScroll();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#071011]/90 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#10244e]/95 backdrop-blur-xl">
       <div className="site-container flex h-[70px] items-center justify-between md:h-20">
         <Link href="/" className="brand-mark" aria-label="MI Digital ana sayfa">
-          <span className="brand-logo-frame">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/brand/mi-digital-logo.jpg" alt="MI Digital" style={{ objectFit: "cover", objectPosition: "center" }} />
-          </span>
+          <span className="brand-symbol" aria-hidden="true">M<span>i</span></span>
+          <span className="brand-wordmark" aria-hidden="true">DIGITAL<span className="brand-wordmark-dot">.</span></span>
         </Link>
         <nav className="hidden items-center gap-7 md:flex">
           {navItems.map((item) => (
@@ -43,11 +42,12 @@ export function Navbar() {
           <motion.nav initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="mobile-nav md:hidden">
             <div className="site-container flex flex-col py-4">
               {navItems.map((item) => <Link key={item.href} href={item.href} onClick={() => setOpen(false)}>{item.label}<span>↗</span></Link>)}
-              <Link href="/iletisim" onClick={() => setOpen(false)} className="!text-[#5eead4]">Projenizi konuşalım <span>↗</span></Link>
+              <Link href="/iletisim" onClick={() => setOpen(false)} className="!text-[#58c5f5]">Projenizi konuşalım <span>↗</span></Link>
             </div>
           </motion.nav>
         )}
       </AnimatePresence>
+      <motion.div className="nav-progress" style={{ scaleX: scrollYProgress }} aria-hidden="true" />
     </header>
   );
 }

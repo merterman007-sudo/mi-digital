@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     type: "website",
     locale: siteConfig.locale,
-    images: [{ url: absoluteUrl(siteConfig.logo), width: 632, height: 632, alt: "MI Digital logosu" }],
+    images: [{ url: absoluteUrl(siteConfig.logo), width: 620, height: 140, alt: "MI Digital logosu" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [absoluteUrl(siteConfig.logo)],
   },
-  icons: { icon: siteConfig.logo, apple: siteConfig.logo },
+  icons: { icon: "/brand/mi-digital-icon.svg", apple: "/brand/mi-digital-icon.svg" },
   robots: {
     index: true,
     follow: true,

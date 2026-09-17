@@ -3,7 +3,7 @@ import type { BrandItem } from "@/data/brands";
 export function BrandsSection({ brands }: { brands: BrandItem[] }) {
   const loop = [...brands, ...brands];
   return (
-    <section id="brands" className="section-space border-y border-white/10 bg-[#0a1516]">
+    <section id="brands" className="section-space brands-light border-y border-[#d9e6f7]">
       <div className="site-container">
         <div className="section-heading">
           <div><p className="eyebrow"><span /> Birlikte çalıştığımız markalar</p><h2>Güçlü iş birlikleri,<br />ölçülebilir büyüme.</h2></div>

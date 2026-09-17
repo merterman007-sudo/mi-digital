@@ -21,7 +21,7 @@ export const siteConfig = {
   city: "Istanbul",
   phone: "+90 543 712 83 66",
   email: "merterman035@gmail.com",
-  logo: "/brand/mi-digital-logo.jpg",
+  logo: "/brand/mi-digital-wordmark.svg",
   sameAs: [],
 } as const;
 
