@@ -33,15 +33,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...localRoutes,
   ];
 
-  return allRoutes.map((route, index) => ({
-    url: absoluteUrl(route),
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority:
-      index === 0
-        ? 1
-        : route.startsWith("/hizmetler/") || route.startsWith("/lokasyon/")
-          ? 0.9
-          : 0.8,
+  const postUpdatedAt = new Map(
+    blogPosts.map((post) => [`/blog/${post.slug}`, post.updatedAt]),
+  );
+
+  return allRoutes.map((route) => ({
+    // The static export serves inner pages at a trailing-slash URL.
+    url: absoluteUrl(route === "/" ? route : `${route}/`),
+    // Only publish a modification date when it comes from real content data.
+    ...(postUpdatedAt.has(route) ? { lastModified: postUpdatedAt.get(route) } : {}),
   }));
 }

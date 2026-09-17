@@ -4,12 +4,15 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = createPageMetadata({
-  title: "Teklif Talebiniz Alındı",
-  description:
-    "Talebiniz MI DIGITAL ekibine ulaştı. En kısa sürede sizinle iletişime geçeceğiz.",
-  path: "/teklif-alindi",
-});
+export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: "Teklif Talebiniz Alındı",
+    description:
+      "Talebiniz MI DIGITAL ekibine ulaştı. En kısa sürede sizinle iletişime geçeceğiz.",
+    path: "/teklif-alindi",
+  }),
+  robots: { index: false, follow: false },
+};
 
 export default function QuoteReceivedPage() {
   return (
