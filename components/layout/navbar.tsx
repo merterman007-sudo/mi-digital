@@ -22,8 +22,8 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#10244e]/95 backdrop-blur-xl">
       <div className="site-container flex h-[70px] items-center justify-between md:h-20">
         <Link href="/" className="brand-mark" aria-label="MI Digital ana sayfa">
-          <span className="brand-symbol" aria-hidden="true">M<span>i</span></span>
-          <span className="brand-wordmark" aria-hidden="true">DIGITAL<span className="brand-wordmark-dot">.</span></span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/brand/mi-digital-wordmark-light.svg" alt="" width="255" height="43" />
         </Link>
         <nav className="hidden items-center gap-7 md:flex">
           {navItems.map((item) => (

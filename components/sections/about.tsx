@@ -5,7 +5,7 @@ export function AboutSection() {
   return (
     <SectionReveal id="about" className="section-space about-editorial">
       <div className="site-container about-editorial-grid">
-        <div><p className="eyebrow"><span /> Biz kimiz?</p><p className="about-editorial-kicker">Tek ekip.<br />Birlikte çalışan<br />çok disiplin.</p></div>
+        <div><p className="eyebrow"><span /> Biz kimiz?</p><p className="about-editorial-kicker">Büyük fikirler.<br />Ölçülebilir etkiler.</p></div>
         <div className="about-editorial-copy">
           <h2>Markayı anlamadan<br /><em>medyaya çıkmıyoruz.</em></h2>
           <p>MI Digital’de strateji, kreatif, medya ve ölçümleme birbirinden kopuk işler değil. Hedefinizi netleştiriyor, doğru kanalları seçiyor, sonuçları okuyup bir sonraki adımı beraber belirliyoruz.</p>

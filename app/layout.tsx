@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     type: "website",
     locale: siteConfig.locale,
-    images: [{ url: absoluteUrl(siteConfig.logo), width: 620, height: 140, alt: "MI Digital logosu" }],
+    images: [{ url: absoluteUrl(siteConfig.logo), width: 744, height: 124, alt: "MI Digital logosu" }],
   },
   twitter: {
     card: "summary_large_image",

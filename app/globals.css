@@ -52,3 +52,4 @@
 @media(max-width:767px){.blue-hero{min-height:calc(100svh - 70px)}.blue-hero-inner{padding-block:68px 115px}.blue-hero-title{font-size:clamp(3rem,11.7vw,5.4rem)}.blue-hero-description{margin-top:21px;font-size:15px}.blue-hero-wave{height:62px}}
 @media(max-height:700px) and (min-width:768px){.blue-hero-inner{padding-block:35px 90px}.blue-hero-title{margin-top:18px;font-size:clamp(3.5rem,5.7vw,5.6rem)}.blue-hero-description{margin-top:16px;font-size:16px}.blue-hero-actions{margin-top:19px}.blue-hero-wave{height:55px}}
 @media(prefers-reduced-motion:reduce){.blue-hero-network{animation:none}}
+.brand-mark img{display:block;width:clamp(178px,18vw,255px);height:auto;max-height:46px}

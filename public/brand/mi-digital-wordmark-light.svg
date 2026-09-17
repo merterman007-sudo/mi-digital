@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 744 124" role="img" aria-labelledby="title">
   <title id="title">MI Digital</title>
-  <g fill="none" stroke="#142b56" stroke-width="7" stroke-linecap="square" stroke-linejoin="round">
+  <g fill="none" stroke="#f8fbff" stroke-width="7" stroke-linecap="square" stroke-linejoin="round">
     <path d="M20 92V32l30 38 30-38v60"/>
     <path d="M116 49v43"/>
     <path d="M171 32h30c27 0 43 12 43 30s-16 30-43 30h-30z"/>
@@ -11,6 +11,6 @@
     <path d="m538 92 30-60 30 60m-49-20h38"/>
     <path d="M632 32v60h51"/>
   </g>
-  <rect x="112.5" y="27" width="7" height="7" rx="1" fill="#c7a985"/>
-  <circle cx="711" cy="89" r="5" fill="#298ac2"/>
+  <rect x="112.5" y="27" width="7" height="7" rx="1" fill="#d6b493"/>
+  <circle cx="711" cy="89" r="5" fill="#70caff"/>
 </svg>
