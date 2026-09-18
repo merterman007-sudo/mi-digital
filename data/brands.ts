@@ -8,4 +8,5 @@ export const brands: BrandItem[] = [
   { id: "pratik-servisim", name: "Pratik Servisim", logoUrl: "/brands/pratik-servisim-official.png", websiteUrl: "https://pratikservisim.com.tr/" },
   { id: "prinwork", name: "Prinwork", logoUrl: "/brands/prinwork-official.svg", websiteUrl: "https://prinwork.com/" },
   { id: "cep-kapinda", name: "Cep Kapında", logoUrl: "/brands/cep-kapinda-official.svg", websiteUrl: "https://cepkapinda.com/" },
+  { id: "american-time", name: "American Time Dil Okulları", logoUrl: "/brands/american-time-official.png", websiteUrl: "https://www.americantime.com.tr/tr" },
 ];

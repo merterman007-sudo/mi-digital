@@ -27,6 +27,7 @@
 .brand-tile{display:flex;flex:0 0 250px;width:250px;height:142px;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.13);border-radius:16px;background:#f7f7f4;padding:20px;transition:transform .2s,border-color .2s}
 .brand-tile:hover,.brand-tile:focus-visible{transform:translateY(-3px);border-color:#58c5f5;outline:none}
 .brand-tile img{display:block;max-width:100%;max-height:96px;width:auto;height:auto;object-fit:contain}
+.brands-light .brand-tile.brand-tile--dark{background:#142b55;border-color:#142b55}
 @keyframes brand-scroll{to{transform:translateX(calc(-50% - 9px))}}
 @media(max-width:640px){.brand-tile{flex-basis:190px;width:190px;height:116px;padding:16px}.brand-tile img{max-height:78px}.brand-marquee-track{gap:12px;animation-duration:26s}}
 @media(prefers-reduced-motion:reduce){.brand-marquee-track{animation:none}.brand-marquee{overflow-x:auto;mask-image:none}}

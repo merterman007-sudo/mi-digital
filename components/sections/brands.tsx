@@ -13,7 +13,7 @@ export function BrandsSection({ brands }: { brands: BrandItem[] }) {
       <div className="brand-marquee" aria-label="Güncel müşterilerimiz">
         <div className="brand-marquee-track">
           {loop.map((brand, index) => (
-            <a className="brand-tile" href={brand.websiteUrl} target="_blank" rel="noopener noreferrer" key={`${brand.id}-${index}`} aria-label={`${brand.name} web sitesi`} aria-hidden={index >= brands.length ? true : undefined} tabIndex={index >= brands.length ? -1 : undefined}>
+            <a className={`brand-tile${brand.id === "american-time" ? " brand-tile--dark" : ""}`} href={brand.websiteUrl} target="_blank" rel="noopener noreferrer" key={`${brand.id}-${index}`} aria-label={`${brand.name} web sitesi`} aria-hidden={index >= brands.length ? true : undefined} tabIndex={index >= brands.length ? -1 : undefined}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={brand.logoUrl} alt={index < brands.length ? `${brand.name} logosu` : ""} loading="lazy" />
             </a>
