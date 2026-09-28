@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/footer";
 import { ConversionCta } from "@/components/blog/conversion-cta";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
-import { blogPosts, getBlogTagPostCount, getBlogTags } from "@/data/blog-posts";
+import { blogPosts, getBlogTags } from "@/data/blog-posts";
 import { createPageMetadata } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-config";
 
@@ -36,9 +36,7 @@ export async function generateMetadata({ params }: BlogTagPageProps): Promise<Me
     path: `/blog/etiket/${tag.slug}`,
     keywords: [tag.name, "blog etiketi"],
   });
-  return getBlogTagPostCount(tag.slug) < 2
-    ? { ...metadata, robots: { index: false, follow: true } }
-    : metadata;
+  return { ...metadata, robots: { index: false, follow: true } };
 }
 
 export default async function BlogTagPage({ params }: BlogTagPageProps) {

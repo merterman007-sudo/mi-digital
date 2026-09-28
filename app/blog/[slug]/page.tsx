@@ -15,6 +15,10 @@ type BlogDetailPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+function sectionId(index: number) {
+  return `bolum-${index + 1}`;
+}
+
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }
@@ -144,9 +148,20 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
           }
         />
 
+        <nav className="blog-toc rounded-2xl p-6" aria-label="Yazı bölümleri">
+          <h2 className="font-display text-xl font-semibold">Bu rehberde</h2>
+          <ol className="mt-3 grid md:grid-cols-2 md:gap-x-8">
+            {post.sections.map((section, index) => (
+              <li key={section.heading}>
+                <a href={`#${sectionId(index)}`}>{section.heading}</a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
         <section className="space-y-6">
-          {post.sections.map((section) => (
-            <article key={section.heading} className="blog-content-card rounded-2xl p-6 md:p-8">
+          {post.sections.map((section, index) => (
+            <article id={sectionId(index)} key={section.heading} className="blog-content-card rounded-2xl p-6 md:p-8">
               <h2 className="font-display text-2xl font-semibold">{section.heading}</h2>
               <div className="mt-4 space-y-4 text-slate-700">
                 {section.paragraphs.map((paragraph) => (

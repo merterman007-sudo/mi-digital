@@ -13,6 +13,7 @@ export function SeoEditorialSection() {
           <div className="seo-editorial-links">
             <Link href="/blog/dijital-pazarlama-ajansi-nedir-nasil-secilir">Dijital pazarlama ajansı seçim rehberi <span>↗</span></Link>
             <Link href="/blog/performans-pazarlama-ajansi-nedir">Performans pazarlama ajansı nedir? <span>↗</span></Link>
+            <Link href="/blog/reklam-performans-metrikleri-kpi-rehberi">CPC, CTR, CPA ve ROAS rehberi <span>↗</span></Link>
             <Link href="/hizmetler/performans-pazarlama">Performans pazarlama hizmetimiz <span>↗</span></Link>
           </div>
         </div>

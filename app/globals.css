@@ -69,3 +69,16 @@
 .site-footer{position:relative;border-top:1px solid rgba(255,255,255,.13);background:#0e244c;color:#fff}.site-footer:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 10%,rgba(88,197,245,.12),transparent 30%)}.site-footer>div{position:relative}.site-footer p,.site-footer li,.site-footer a{color:#bdcde2}.site-footer .font-semibold{color:#fff}.site-footer a:hover{color:#72cdf7}.site-footer-bottom{border-color:rgba(255,255,255,.13);color:#8fa7c5}
 .content-page main .conversion-cta{border-color:#cfe2f5;background:linear-gradient(135deg,#eaf5ff,#fff 55%,#edf2ff);color:#142b56}.content-page main .conversion-cta h2{color:#173565}.content-page main .conversion-cta p{color:#61728b}.content-page main #contact>div{border-color:#b8daf1;background:linear-gradient(135deg,#fff,#edf7ff 60%,#e8f1fb);color:#142b56}.content-page main #contact h2{color:#173565}.content-page main #contact p{color:#61728b}
 .content-page main .page-hero-panel a:last-child{border-color:#aac9e4;background:#fff;color:#234b7d}.content-page main .page-hero-panel a:last-child:hover{background:#eaf5ff}
+
+/* Rich service identities and scannable editorial navigation. */
+.service-visual--default{display:grid;grid-template-columns:1fr;align-items:center;gap:28px;padding:32px;background:radial-gradient(circle at 18% 45%,rgba(88,197,245,.22),transparent 32%),linear-gradient(135deg,#10244e,#1b4d91);color:#fff}
+.service-visual--default .service-visual-copy strong{max-width:540px}
+.service-visual--default .service-visual-copy p{color:#d5e8f8;font-size:13px;font-weight:650;letter-spacing:.06em}
+.service-signal-orbit{position:relative;min-height:205px}
+.service-signal-core{position:absolute;left:50%;top:50%;display:grid;width:82px;height:82px;place-items:center;border-radius:50%;background:#fff;color:#173565;font-family:var(--font-space);font-size:25px;font-weight:800;transform:translate(-50%,-50%);box-shadow:0 0 0 15px rgba(255,255,255,.08),0 20px 45px rgba(4,19,50,.25)}
+.service-signal-orbit i{position:absolute;border:1px solid rgba(255,255,255,.35);border-radius:999px;background:rgba(255,255,255,.09);padding:9px 13px;color:#e8f6ff;font-size:11px;font-style:normal;font-weight:750}
+.service-signal-orbit i:nth-of-type(1){left:3%;top:13%}.service-signal-orbit i:nth-of-type(2){right:3%;top:19%}.service-signal-orbit i:nth-of-type(3){left:50%;bottom:6%;transform:translateX(-50%)}
+.blog-toc{border:1px solid #d2e3f5;background:linear-gradient(135deg,#fff,#edf6ff);box-shadow:0 18px 55px -48px rgba(20,55,110,.55)}
+.blog-toc h2{color:#173565}.blog-toc ol{counter-reset:toc}.blog-toc a{display:flex;align-items:center;gap:12px;border-top:1px solid #dce8f5;padding:12px 2px;color:#496581;font-size:14px;font-weight:650}
+.blog-toc a:before{counter-increment:toc;content:counter(toc,decimal-leading-zero);color:#278fc7;font-family:var(--font-space);font-size:11px;letter-spacing:.08em}.blog-toc a:hover{color:#278fc7}.blog-content-card{scroll-margin-top:105px}
+@media(min-width:760px){.service-visual--default{grid-template-columns:1fr 1.1fr;padding:35px 55px}.service-signal-orbit{min-height:235px}}

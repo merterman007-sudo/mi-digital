@@ -924,8 +924,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "TikTok Ads’te başarı, başka platformdaki reklamı kopyalamaktan değil, platformun doğal video diline uygun test sisteminden geçer.",
     description: "TikTok Ads nasıl verilir? Kampanya hedefi, video kreatif, pixel, hedef kitle, bütçe ve performans metrikleri için uygulanabilir reklam rehberi.",
     publishedAt: "2026-09-03",
-    updatedAt: "2026-09-08",
-    readingMinutes: 12,
+    updatedAt: "2026-09-28",
+    readingMinutes: 15,
     author: "MI DIGITAL",
     category: { name: "TikTok Ads", slug: "tiktok-ads" },
     tags: [
@@ -941,6 +941,14 @@ export const blogPosts: BlogPost[] = [
           "TikTok Ads; görsel anlatımı güçlü, hızlı test edilebilen ve ürününü kısa videoda gösterebilen markalar için önemli bir keşif ve performans kanalı olabilir. Ancak platforma girmek, aynı Meta reklamını dikey formata çevirmek değildir.",
           "Kararı hedef kitle yaşına göre değil; satın alma davranışı, içerik üretme kapasitesi ve teklifin video içinde anlatılabilirliğine göre verin.",
         ],
+      },
+      {
+        heading: "TikTok'ta Reklam Nasıl Verilir? Adım Adım Kurulum",
+        paragraphs: [
+          "TikTok'ta reklam vermek için önce TikTok Ads Manager hesabı, ödeme profili ve reklam hesabı oluşturulur. Ardından web sitesi için TikTok Pixel kurulur, hedef olaylar test edilir ve kampanya amacı seçilir. Satış hedefleyen bir marka yalnızca trafik kampanyasıyla başlamamalı; ölçüm altyapısı hazırsa dönüşüm hedefini kullanmalıdır.",
+          "Kampanya seviyesinde hedef ve bütçe, reklam grubu seviyesinde kitle, yerleşim ve optimizasyon olayı; reklam seviyesinde ise video, metin ve çağrı belirlenir. Yayın öncesinde hedef URL'nin mobilde açıldığı, UTM parametrelerinin çalıştığı ve dönüşüm olayının doğru tetiklendiği kontrol edilmelidir.",
+        ],
+        bullets: ["Ads Manager ve ödeme profilini tamamlayın", "Pixel ile hedef dönüşümü doğrulayın", "Kampanya amacı ve optimizasyon olayını eşleştirin", "Dikey video, reklam metni ve CTA'yı hazırlayın", "UTM, hedef URL ve mobil sayfayı test edin"],
       },
       {
         heading: "TikTok Reklam Kreatifi Nasıl Olmalı?",
@@ -977,8 +985,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Reklam raporunu metrik kalabalığına çevirmeden, doğru KPI’larla hangi kampanyaya ne aksiyon alınacağını görün.",
     description: "CPC, CTR, CPM, CPA, dönüşüm oranı, ROAS ve müşteri edinme maliyeti nasıl yorumlanır? Google, Meta ve TikTok reklamları için performans metriği rehberi.",
     publishedAt: "2026-09-02",
-    updatedAt: "2026-09-08",
-    readingMinutes: 13,
+    updatedAt: "2026-09-28",
+    readingMinutes: 16,
     author: "MI DIGITAL",
     category: { name: "Performans Pazarlama", slug: "performans-pazarlama" },
     tags: [
@@ -1000,6 +1008,21 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "CPC bir tıklamanın maliyetini, CPM bin gösterimin maliyetini, CTR reklamın dikkat gücünü ve dönüşüm oranı sayfanın ikna kabiliyetini anlatır. CPC düşük diye trafik kaliteli değildir; tıklamaların sayfada ne yaptığı kontrol edilmelidir.",
           "CTR yüksek ama dönüşüm düşükse reklam vaadi ile landing page arasında kopukluk olabilir. CTR düşük ama dönüşüm oranı yüksekse daha uygun kullanıcıya ulaşacak başlık ve kreatif testleri denenebilir.",
+        ],
+      },
+      {
+        heading: "CTR, CPC ve CPA Nasıl Hesaplanır?",
+        paragraphs: [
+          "CTR, tıklama sayısının gösterim sayısına bölünüp 100 ile çarpılmasıyla hesaplanır. Örneğin 10.000 gösterim ve 250 tıklama alan reklamın CTR'ı yüzde 2,5'tir. CPC, toplam harcamanın tıklama sayısına bölünmesidir. 5.000 TL harcama ve 250 tıklamada ortalama CPC 20 TL olur.",
+          "CPA, toplam harcamanın tanımlanan dönüşüm sayısına bölünmesidir. Aynı 5.000 TL harcama 25 nitelikli form ürettiyse CPA 200 TL'dir. Dönüşüm tanımı değişirse CPA'nın anlamı da değişir; sayfa görüntüleme maliyeti ile satış maliyeti aynı metrik gibi karşılaştırılmamalıdır.",
+        ],
+        bullets: ["CTR = Tıklama ÷ Gösterim × 100", "CPC = Reklam harcaması ÷ Tıklama", "CPA = Reklam harcaması ÷ Dönüşüm", "ROAS = Reklam geliri ÷ Reklam harcaması"],
+      },
+      {
+        heading: "CTR Yüksek, CPA Kötüyse Ne Anlama Gelir?",
+        paragraphs: [
+          "Yüksek CTR reklamın dikkat çektiğini gösterir; doğru kullanıcıyı ve doğru beklentiyi oluşturduğunu garanti etmez. Reklam abartılı bir vaatle tıklama topluyor, açılış sayfası bu vaadi karşılamıyor veya form gereksiz sürtünme yaratıyor olabilir.",
+          "Bu durumda hedeflemeyi, arama terimlerini, reklam–sayfa mesaj uyumunu ve form tamamlanma oranını birlikte inceleyin. CPC'yi düşürmeye çalışmadan önce hangi tıklamaların nitelikli dönüşüme yaklaştığını bulun.",
         ],
       },
       {
@@ -1151,6 +1174,70 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedServiceSlugs: ["performans-pazarlama", "google-ads-danismanligi", "meta-ads-yonetimi"],
   },
+  {
+    slug: "kampanya-performansi-nasil-iyilestirilir",
+    title: "Kampanya Performansı Nasıl İyileştirilir? 7 Adımlı Optimizasyon Planı",
+    excerpt: "Reklam hesabında rastgele değişiklik yapmak yerine ölçüm, sorgu, kreatif, teklif ve landing page verilerini doğru sırayla iyileştirin.",
+    description: "Dijital reklam kampanya performansı nasıl iyileştirilir? Google Ads, Meta Ads ve TikTok kampanyaları için ölçüm, hedefleme, kreatif, bütçe ve dönüşüm optimizasyonu adımları.",
+    publishedAt: "2026-09-28",
+    updatedAt: "2026-09-28",
+    readingMinutes: 13,
+    author: "MI DIGITAL",
+    category: { name: "Performans Pazarlama", slug: "performans-pazarlama" },
+    tags: [
+      { name: "Kampanya Optimizasyonu", slug: "kampanya-optimizasyonu" },
+      { name: "Performans Pazarlama", slug: "performans-pazarlama" },
+      { name: "CPA", slug: "cpa" },
+      { name: "Dönüşüm", slug: "donusum" },
+    ],
+    sections: [
+      {
+        heading: "Kampanya Performansını İyileştirmeden Önce Ölçümü Doğrulayın",
+        paragraphs: [
+          "Uzman pazarlama hizmetleri kampanya performansını önce daha fazla bütçe harcayarak değil, verinin güvenilirliğini kontrol ederek iyileştirir. Form, telefon, WhatsApp veya satış olayları yanlış ya da mükerrer ölçülüyorsa algoritma hatalı sinyale göre optimizasyon yapar.",
+          "Birincil dönüşümler gerçek iş sonucunu, ikincil dönüşümler ise kullanıcı davranışını göstermelidir. Sayfa görüntüleme gibi kolay gerçekleşen olayların satışla aynı değerde sayılması CPA ve ROAS yorumunu bozar.",
+        ],
+        bullets: ["Dönüşüm olayı bir kez mi tetikleniyor?", "Test formları rapordan ayrılıyor mu?", "UTM ve kanal bilgisi CRM'e ulaşıyor mu?", "Platform geliri gerçek siparişle eşleşiyor mu?"],
+      },
+      {
+        heading: "1. Kampanyayı Tek Bir İş Hedefine Bağlayın",
+        paragraphs: [
+          "Trafik, etkileşim, form ve satış hedeflerini aynı kampanyada başarı ölçütü yapmak karar kalitesini düşürür. Her kampanyanın tek bir ana sonucu ve onu açıklayan yardımcı göstergeleri olmalıdır.",
+          "E-ticarette yeni müşteri geliri, hizmet sektöründe nitelikli form, B2B'de toplantıya dönüşen lead daha anlamlı ana hedefler olabilir. CTR ve CPC bu sonuca giden yolu açıklar; sonucun kendisi değildir.",
+        ],
+      },
+      {
+        heading: "2. Sorgu ve Hedefleme Kalitesini Temizleyin",
+        paragraphs: [
+          "Google Ads'te arama terimlerini niyet gruplarına ayırın. Bilgi arayan, fiyat araştıran ve satın almaya hazır kullanıcı aynı teklif ve açılış sayfasıyla karşılanmamalıdır. Alakasız sorguları negatifleyin; yüksek niyetli kümeleri ayrı reklam gruplarında yönetin.",
+          "Meta ve TikTok'ta hedeflemeyi sürekli daraltmak yerine kreatifin kime ve hangi problem için konuştuğunu netleştirin. Kitle kalitesini tıklama sonrası davranış ve nitelikli dönüşümle ölçün.",
+        ],
+      },
+      {
+        heading: "3. Kreatif ve Teklifi Kontrollü Test Edin",
+        paragraphs: [
+          "Aynı anda başlık, görsel, hedef kitle ve teklif değişirse performans farkının nedeni anlaşılmaz. Her testte tek ana hipotez belirleyin: yeni problem açısı, farklı kanıt, güçlü teklif veya farklı video girişi gibi.",
+        ],
+        bullets: ["Testin varsayımını yazın", "Tek ana değişken seçin", "Başarı metriğini yayından önce belirleyin", "Yeterli veri oluşmadan kazanan ilan etmeyin"],
+      },
+      {
+        heading: "4. Landing Page ve Form Sürtünmesini Azaltın",
+        paragraphs: [
+          "Reklam iyi tıklanıyor fakat dönüşüm gelmiyorsa sorun hedefleme kadar sayfa deneyimi de olabilir. İlk ekranda reklam vaadinin devamı görünmeli, güven unsurları teklifi desteklemeli ve form yalnızca satış için gereken bilgileri istemelidir.",
+          "Mobil hız, buton görünürlüğü, hata mesajları ve teşekkür sayfası gerçek cihazlarda test edilmelidir. Dönüşüm oranındaki küçük artışlar, medya bütçesini yükseltmeden CPA'yı düşürebilir.",
+        ],
+      },
+      {
+        heading: "5. Bütçeyi Sonuca ve Öğrenmeye Göre Dağıtın",
+        paragraphs: [
+          "Bütçeyi yalnızca en düşük CPC'ye değil, nitelikli dönüşüm maliyetine ve ölçeklenebilirliğe göre dağıtın. Az veri üreten çok sayıda kampanya yerine, yeterli sinyal oluşturabilecek öncelikli testlere odaklanın.",
+          "Haftalık değerlendirmede ne olduğu, neden olduğu ve sonraki aksiyon birlikte yazılmalıdır. Durdurulacak kampanya, korunacak kazanan ve yeni test aynı raporda görünmelidir.",
+        ],
+        bullets: ["Durdur: maliyet artıyor, kalite düşüyor", "Koru: sonuç stabil, öğrenme sürüyor", "Test et: neden ve beklenen sinyal net", "Ölçekle: kalite korunarak kontrollü bütçe artışı"],
+      },
+    ],
+    relatedServiceSlugs: ["performans-pazarlama", "google-ads-danismanligi", "meta-ads-yonetimi"],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string) {
@@ -1180,6 +1267,10 @@ export function getBlogTags() {
     }
   }
   return [...map.values()];
+}
+
+export function getBlogCategoryPostCount(slug: string) {
+  return blogPosts.filter((post) => post.category.slug === slug).length;
 }
 
 export function getBlogTagPostCount(slug: string) {

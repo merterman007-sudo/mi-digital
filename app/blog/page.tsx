@@ -5,7 +5,7 @@ import { Footer } from "@/components/layout/footer";
 import { ConversionCta } from "@/components/blog/conversion-cta";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
-import { getAllBlogPosts, getBlogCategories, getBlogTags } from "@/data/blog-posts";
+import { getAllBlogPosts, getBlogCategories } from "@/data/blog-posts";
 import { getServiceBySlug } from "@/data/services";
 import { createPageMetadata } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-config";
@@ -25,7 +25,6 @@ export const metadata: Metadata = createPageMetadata({
 
 const posts = getAllBlogPosts();
 const categories = getBlogCategories();
-const tags = getBlogTags();
 
 const blogSchema = {
   "@context": "https://schema.org",
@@ -82,21 +81,6 @@ export default function BlogPage() {
                 className="rounded-full border border-cyan-200/70 bg-cyan-50/70 px-4 py-2 text-sm font-medium text-cyan-900 transition hover:bg-cyan-100 dark:border-cyan-900/60 dark:bg-cyan-900/20 dark:text-cyan-200 dark:hover:bg-cyan-900/35"
               >
                 {category.name}
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="space-y-4">
-          <h2 className="font-display text-2xl font-semibold">Etiketler</h2>
-          <div className="flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <Link
-                key={tag.slug}
-                href={`/blog/etiket/${tag.slug}`}
-                className="rounded-full border border-slate-300 bg-white/80 px-3 py-1.5 text-xs font-medium text-slate-700 transition hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-200 dark:hover:bg-slate-900"
-              >
-                #{tag.name}
               </Link>
             ))}
           </div>

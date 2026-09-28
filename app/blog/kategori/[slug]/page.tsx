@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/footer";
 import { ConversionCta } from "@/components/blog/conversion-cta";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
-import { blogPosts, getBlogCategories } from "@/data/blog-posts";
+import { blogPosts, getBlogCategories, getBlogCategoryPostCount } from "@/data/blog-posts";
 import { createPageMetadata } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-config";
 
@@ -30,12 +30,15 @@ export async function generateMetadata({ params }: BlogCategoryPageProps): Promi
     });
   }
 
-  return createPageMetadata({
+  const metadata = createPageMetadata({
     title: `${category.name} Yazıları`,
     description: `${category.name} kategorisindeki tüm MI DIGITAL blog içerikleri.`,
     path: `/blog/kategori/${category.slug}`,
     keywords: [category.name, "blog kategorisi"],
   });
+  return getBlogCategoryPostCount(category.slug) < 2
+    ? { ...metadata, robots: { index: false, follow: true } }
+    : metadata;
 }
 
 export default async function BlogCategoryPage({ params }: BlogCategoryPageProps) {
