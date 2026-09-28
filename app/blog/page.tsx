@@ -42,7 +42,7 @@ const blogSchema = {
 
 export default function BlogPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="blog-index-page flex min-h-screen flex-col">
       <Navbar />
       <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-8 px-4 pb-16 pt-8 sm:px-6 lg:px-8">
         <JsonLd data={blogSchema} />
@@ -53,7 +53,7 @@ export default function BlogPage() {
           ]}
         />
 
-        <section className="glass-panel rounded-3xl p-8 md:p-10">
+        <section className="blog-index-hero rounded-3xl p-8 md:p-10">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-700 dark:text-cyan-300">
             Blog
           </p>
@@ -109,7 +109,7 @@ export default function BlogPage() {
               .find(Boolean);
 
             return (
-              <article key={post.slug} className="glass-panel card-hover rounded-2xl p-6">
+              <article key={post.slug} className="blog-index-card card-hover rounded-2xl p-6">
                 <p className="text-xs uppercase tracking-[0.14em] text-cyan-700 dark:text-cyan-300">
                   {post.category.name}
                 </p>

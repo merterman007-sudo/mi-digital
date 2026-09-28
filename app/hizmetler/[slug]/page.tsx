@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { PageHero } from "@/components/sections/page-hero";
+import { ServiceVisual } from "@/components/services/service-visual";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
 import { blogPosts } from "@/data/blog-posts";
@@ -135,6 +136,8 @@ export default async function ServiceDetailPage({
           ctaSecondaryHref="/hizmetler"
           variant="cyan"
         />
+
+        <ServiceVisual slug={service.slug} title={service.title} />
 
         {guide ? (
           <section className="space-y-5" aria-label={`${service.title} yaklaşımımız`}>

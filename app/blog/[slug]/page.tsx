@@ -49,7 +49,18 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
 
   const relatedServices = services.filter((service) => post.relatedServiceSlugs.includes(service.slug));
   const mainService = relatedServices[0];
-  const relatedPosts = getAllBlogPosts().filter((item) => item.slug !== post.slug).slice(0, 2);
+  const relatedPosts = getAllBlogPosts()
+    .filter((item) => item.slug !== post.slug)
+    .map((item) => ({
+      item,
+      score:
+        (item.category.slug === post.category.slug ? 3 : 0) +
+        item.tags.filter((tag) => post.tags.some((postTag) => postTag.slug === tag.slug)).length +
+        item.relatedServiceSlugs.filter((slug) => post.relatedServiceSlugs.includes(slug)).length,
+    }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map(({ item }) => item);
 
   const faqEntries = [
     {
@@ -99,9 +110,9 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
   };
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="blog-detail-page flex min-h-screen flex-col">
       <Navbar />
-      <main className="mx-auto flex w-full max-w-4xl flex-1 flex-col gap-8 px-4 pb-16 pt-8 sm:px-6 lg:px-8">
+      <main className="blog-detail-main mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-4 pb-20 pt-8 sm:px-6 lg:px-8">
         <JsonLd data={[articleSchema, faqSchema]} />
         <Breadcrumbs
           items={[
@@ -111,11 +122,14 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
           ]}
         />
 
-        <article className="glass-panel rounded-3xl p-8 md:p-10">
+        <article className="blog-article-hero rounded-[2rem] p-8 md:p-12">
           <p className="text-xs uppercase tracking-[0.16em] text-cyan-700 dark:text-cyan-300">{post.category.name}</p>
           <h1 className="mt-3 font-display text-3xl font-semibold leading-tight sm:text-4xl">{post.title}</h1>
-          <p className="mt-4 text-sm text-slate-500 dark:text-slate-400">{post.publishedAt} • {post.readingMinutes} dk okuma</p>
-          <p className="mt-6 text-base leading-7 text-slate-700 dark:text-slate-300">{post.excerpt}</p>
+          <p className="mt-4 text-sm text-blue-100/80">{post.publishedAt} • {post.readingMinutes} dk okuma • {post.author}</p>
+          <p className="mt-7 max-w-3xl text-lg leading-8 text-blue-50">{post.excerpt}</p>
+          <div className="blog-metric-strip" aria-label="Yazının ana konuları">
+            {post.tags.slice(0, 4).map((tag) => <span key={tag.slug}>{tag.name}</span>)}
+          </div>
         </article>
 
         <ConversionCta
@@ -132,15 +146,15 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
 
         <section className="space-y-6">
           {post.sections.map((section) => (
-            <article key={section.heading} className="glass-panel rounded-2xl p-6">
+            <article key={section.heading} className="blog-content-card rounded-2xl p-6 md:p-8">
               <h2 className="font-display text-2xl font-semibold">{section.heading}</h2>
-              <div className="mt-3 space-y-3 text-slate-700 dark:text-slate-300">
+              <div className="mt-4 space-y-4 text-slate-700">
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
               {section.bullets ? (
-                <ul className="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-300">
+                <ul className="blog-check-list mt-5 space-y-3 text-sm text-slate-700">
                   {section.bullets.map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="mt-2 h-2 w-2 rounded-full bg-cyan-500" />
@@ -154,14 +168,14 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
         </section>
 
         {relatedServices.length > 0 ? (
-          <section className="glass-panel rounded-2xl p-6">
+          <section className="blog-link-panel rounded-2xl p-6">
             <h2 className="font-display text-2xl font-semibold">İlgili Hizmetler</h2>
             <div className="mt-4 flex flex-wrap gap-3">
               {relatedServices.map((service) => (
                 <Link
                   key={service.slug}
                   href={`/hizmetler/${service.slug}`}
-                  className="rounded-full border border-cyan-200/70 bg-cyan-50/70 px-4 py-2 text-sm font-medium text-cyan-900 transition hover:bg-cyan-100 dark:border-cyan-900/60 dark:bg-cyan-900/25 dark:text-cyan-200"
+                    className="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-900 transition hover:bg-blue-100"
                 >
                   {service.title}
                 </Link>
@@ -173,15 +187,15 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
         {relatedPosts.length > 0 ? (
           <section className="space-y-4">
             <h2 className="font-display text-2xl font-semibold">Diğer Yazılar</h2>
-            <div className="grid gap-4 md:grid-cols-2">
+            <div className="grid gap-4 md:grid-cols-3">
               {relatedPosts.map((relatedPost) => (
-                <article key={relatedPost.slug} className="glass-panel rounded-2xl p-5">
+                <article key={relatedPost.slug} className="blog-related-card rounded-2xl p-5">
                   <h3 className="font-display text-xl font-semibold">
                     <Link href={`/blog/${relatedPost.slug}`} className="transition hover:text-cyan-700 dark:hover:text-cyan-300">
                       {relatedPost.title}
                     </Link>
                   </h3>
-                  <p className="mt-2 text-sm text-slate-700 dark:text-slate-300">{relatedPost.excerpt}</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">{relatedPost.excerpt}</p>
                 </article>
               ))}
             </div>

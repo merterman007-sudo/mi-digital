@@ -1023,6 +1023,134 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedServiceSlugs: ["performans-pazarlama", "google-ads-danismanligi", "meta-ads-yonetimi"],
   },
+  {
+    slug: "dijital-pazarlama-ajansi-nedir-nasil-secilir",
+    title: "Dijital Pazarlama Ajansı Nedir? Hizmetleri ve Ajans Seçim Rehberi",
+    excerpt: "Bir dijital pazarlama ajansının hangi işleri üstlendiğini, doğru ajansın nasıl seçileceğini ve teklifleri karşılaştırırken hangi ölçütlere bakılması gerektiğini öğrenin.",
+    description: "Dijital pazarlama ajansı nedir, ne iş yapar ve nasıl seçilir? Google Ads, Meta Ads, SEO, içerik, kreatif ve ölçümleme hizmetlerini karşılaştırmalı inceleyin.",
+    publishedAt: "2026-09-28",
+    updatedAt: "2026-09-28",
+    readingMinutes: 14,
+    author: "MI DIGITAL",
+    category: { name: "Dijital Pazarlama", slug: "dijital-pazarlama" },
+    tags: [
+      { name: "Dijital Pazarlama Ajansı", slug: "dijital-pazarlama-ajansi" },
+      { name: "Ajans Seçimi", slug: "ajans-secimi" },
+      { name: "Performans Pazarlama", slug: "performans-pazarlama" },
+      { name: "Dijital Reklam", slug: "dijital-reklam" },
+    ],
+    sections: [
+      {
+        heading: "Dijital Pazarlama Ajansı Ne İş Yapar?",
+        paragraphs: [
+          "Dijital pazarlama ajansı, bir markanın internet üzerindeki görünürlüğünü ve müşteri kazanımını planlayan; reklam, içerik, SEO, kreatif, web deneyimi ve ölçümleme çalışmalarını ortak bir hedefte buluşturan ekip olarak çalışır. Ajansın görevi yalnızca kampanya açmak veya sosyal medya gönderisi hazırlamak değildir. Doğru kanalın seçilmesi, bütçenin dağıtılması ve sonucun işletme verisiyle ölçülmesi aynı sistemin parçalarıdır.",
+          "Her işletmenin aynı hizmet paketine ihtiyacı yoktur. Arama talebi güçlü bir hizmet şirketinde Google Ads ve SEO öncelikli olabilir. Görsel anlatımı güçlü bir e-ticaret markasında Meta ve TikTok kreatifleri öne çıkabilir. B2B bir şirkette ise LinkedIn, içerik ve CRM takibi birlikte düşünülmelidir.",
+        ],
+      },
+      {
+        heading: "Bir Dijital Ajansın Temel Hizmetleri",
+        paragraphs: [
+          "Hizmet isimlerinin çokluğu karar vermeyi zorlaştırabilir. Asıl ayrım, ajansın yalnızca platform işlemleri mi yaptığı yoksa müşteri yolculuğunun tamamını mı yönettiğidir. Aşağıdaki hizmetlerin her biri farklı bir sorunu çözer; birlikte kullanıldıklarında aynı ölçüm planına bağlanmaları gerekir.",
+        ],
+        bullets: [
+          "Google Ads: aktif arama talebini satış veya nitelikli forma dönüştürme",
+          "Meta ve TikTok Ads: kreatiflerle yeni talep üretme ve yeniden pazarlama",
+          "SEO ve içerik: arama sonuçlarında kalıcı görünürlük oluşturma",
+          "Programatik ve Criteo: uygun envanterde kitle, katalog ve medya satın alma",
+          "Web ve landing page: reklam trafiğini anlaşılır bir teklife yönlendirme",
+          "CRM ve analitik: formdan satışa kadar müşteri kalitesini izleme",
+        ],
+      },
+      {
+        heading: "Dijital Pazarlama Ajansı Seçerken Sorulacak 8 Soru",
+        paragraphs: [
+          "İyi bir sunum veya düşük yönetim ücreti tek başına doğru iş ortağını göstermez. Ajansın hedefi nasıl tanımladığına, hangi veriyi kullanacağına ve başarısız bir testte nasıl karar vereceğine bakın. Belirli satış veya ROAS garantisi veren vaatleri, özellikle yeterli geçmiş veri yoksa temkinli değerlendirin.",
+        ],
+        bullets: [
+          "Hedefimiz için hangi kanal neden öncelikli?",
+          "Dönüşüm ve gelir verisi nasıl doğrulanacak?",
+          "Kreatif üretim ve test sorumluluğu kimde olacak?",
+          "Rapor yalnızca metrik mi, yoksa aksiyon da içeriyor mu?",
+          "Reklam hesaplarının sahipliği markada mı kalacak?",
+          "İletişim ve optimizasyon sıklığı nasıl olacak?",
+          "Başarısız test ne zaman durdurulacak?",
+          "Ajans ücreti ile medya bütçesi açıkça ayrılıyor mu?",
+        ],
+      },
+      {
+        heading: "Ajans Ücreti ve Reklam Bütçesi Nasıl Planlanır?",
+        paragraphs: [
+          "Toplam pazarlama yatırımında medya bütçesi, ajans hizmeti, kreatif üretim, teknoloji ve landing page geliştirmesi ayrı kalemlerdir. Yalnızca reklam bütçesine bakmak, üretim ve ölçümleme için gerekli kaynağı görünmez hale getirir. Başlangıç planı; öğrenmek için yeterli veri üreten fakat işletmenin risk sınırını aşmayan bir test bütçesi içermelidir.",
+          "Yönetim ücretini tek başına karşılaştırmak yerine kapsamı karşılaştırın. Haftalık optimizasyon, kreatif yönlendirme, teknik ölçümleme, raporlama ve toplantı sıklığı teklif içinde açıkça yazılmalıdır. En ucuz teklif, eksik kapsam nedeniyle daha pahalı sonuç üretebilir; en yüksek ücret de otomatik olarak daha iyi sonuç anlamına gelmez.",
+        ],
+      },
+      {
+        heading: "Ajans Performansı Hangi KPI'larla Ölçülür?",
+        paragraphs: [
+          "CPC ve CTR reklamın trafik tarafını; dönüşüm oranı ve CPA teklif ile sayfa deneyimini; ROAS gelir katkısını anlatır. Ancak hizmet işletmelerinde formun nitelikli olup olmadığı, B2B'de görüşmeye dönüşüp dönüşmediği ve e-ticarette yeni müşteri oranı gibi iş metrikleri eklenmeden tablo eksik kalır.",
+          "İyi bir aylık değerlendirme üç soruyu yanıtlar: Ne oldu, neden oldu ve sonraki test ne? Ajans–marka ilişkisi yalnızca rapor teslimi değil, veriye dayalı karar ritmi üzerine kurulmalıdır.",
+        ],
+      },
+    ],
+    relatedServiceSlugs: ["performans-pazarlama", "seo-icerik-stratejisi", "web-tasarim-gelistirme"],
+  },
+  {
+    slug: "performans-pazarlama-ajansi-nedir",
+    title: "Performans Pazarlama Ajansı Nedir? Geleneksel Ajanstan Farkı",
+    excerpt: "Performans pazarlama ajansının kampanya, kreatif ve ölçümleme yaklaşımını; geleneksel ajans modeliyle arasındaki farkları somut KPI'lar üzerinden inceleyin.",
+    description: "Performans pazarlama ajansı nedir? Google Ads, Meta Ads, kreatif test, CPA, ROAS ve ölçümleme süreçlerinin nasıl yönetildiğini öğrenin.",
+    publishedAt: "2026-09-27",
+    updatedAt: "2026-09-28",
+    readingMinutes: 11,
+    author: "MI DIGITAL",
+    category: { name: "Performans Pazarlama", slug: "performans-pazarlama" },
+    tags: [
+      { name: "Performans Pazarlama", slug: "performans-pazarlama" },
+      { name: "Dijital Pazarlama Ajansı", slug: "dijital-pazarlama-ajansi" },
+      { name: "CPA", slug: "cpa" },
+      { name: "ROAS", slug: "roas" },
+    ],
+    sections: [
+      {
+        heading: "Performans Pazarlama Ne Demektir?",
+        paragraphs: [
+          "Performans pazarlama, medya yatırımını ölçülebilir bir iş hedefiyle yöneten yaklaşımdır. Bu hedef e-ticarette satış ve gelir, hizmet sektöründe nitelikli form, uygulamada kayıt veya abonelik olabilir. Gösterim ve tıklama önemlidir; fakat nihai kararın tek başına bu metriklerle verilmemesi gerekir.",
+          "Performans pazarlama ajansı kampanya yapısını, kreatif testini, açılış sayfasını ve dönüşüm verisini birlikte değerlendirir. Platform ekranındaki düşüşün nedenini yalnızca hedef kitlede değil; teklif, mesaj, site deneyimi veya ölçümleme hatasında da arar.",
+        ],
+      },
+      {
+        heading: "Geleneksel Ajans ile Performans Ajansı Arasındaki Fark",
+        paragraphs: [
+          "Geleneksel ajans modeli çoğunlukla marka iletişimi, medya görünürlüğü ve yaratıcı üretim çevresinde konumlanır. Performans modeli ise her aktivitenin ölçülebilir hedefe katkısını daha kısa aralıklarla test eder. İki yaklaşım birbirinin karşıtı değildir; marka etkisi ile dönüşüm hedefi doğru planlandığında birbirini güçlendirir.",
+        ],
+        bullets: [
+          "Kampanyalar varsayımla değil, test hipoteziyle başlar",
+          "Bütçe sabit dağıtılmaz; sonuç ve öğrenmeye göre değiştirilir",
+          "Kreatif yalnız estetik açıdan değil, davranış sinyaliyle değerlendirilir",
+          "Platform verisi analitik, CRM ve satış geri bildirimiyle karşılaştırılır",
+        ],
+      },
+      {
+        heading: "CPC, CTR, CPA ve ROAS'ın Rolü",
+        paragraphs: [
+          "CTR reklamın ilgi uyandırma gücünü, CPC trafiğin maliyetini, CPA tanımlanmış dönüşümün maliyetini ve ROAS reklam gelirinin harcamaya oranını gösterir. Bu metriklerden biri tek başına kampanyanın sağlıklı olduğunu kanıtlamaz. Yüksek CTR yanlış vaatle de oluşabilir; yüksek ROAS mevcut müşterilerin yeniden satın alımından gelebilir.",
+          "KPI seti iş modeline göre belirlenmelidir. Nitelikli lead, görüşmeye dönüşüm, yeni müşteri oranı, katkı marjı ve müşteri yaşam boyu değeri gerektiğinde platform metriklerine eklenir.",
+        ],
+      },
+      {
+        heading: "İlk 90 Günlük Çalışma Nasıl İlerler?",
+        paragraphs: [
+          "İlk aşamada ölçümleme, hesap geçmişi, ürün veya hizmet teklifi ve açılış sayfaları denetlenir. Sonra en yüksek etkili sorunlara göre kampanya yapısı ve test planı hazırlanır. İlk veriler, bütçe ve satış döngüsüne bağlı olarak farklı hızlarda oluşabilir.",
+        ],
+        bullets: [
+          "1–30 gün: ölçüm doğrulama, hesap denetimi ve öncelikli testler",
+          "31–60 gün: sorgu, kitle, kreatif ve sayfa verisine göre optimizasyon",
+          "61–90 gün: kanıtlanan mesajları ölçekleme ve yeni test alanları",
+        ],
+      },
+    ],
+    relatedServiceSlugs: ["performans-pazarlama", "google-ads-danismanligi", "meta-ads-yonetimi"],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string) {

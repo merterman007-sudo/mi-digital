@@ -5,6 +5,7 @@ import { ContactSection } from "@/components/sections/contact";
 import { ServicesSection } from "@/components/sections/services";
 import { BrandsSection } from "@/components/sections/brands";
 import { AboutSection } from "@/components/sections/about";
+import { SeoEditorialSection } from "@/components/sections/seo-editorial";
 import { Footer } from "@/components/layout/footer";
 import { JsonLd } from "@/components/seo/json-ld";
 import { brands } from "@/data/brands";
@@ -50,6 +51,7 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
         <AboutSection />
+        <SeoEditorialSection />
         <BrandsSection brands={brands} />
         <section className="relative mx-auto w-full max-w-6xl px-4 pb-10 sm:px-6 lg:px-8">
           <div className="rounded-[28px] border border-cyan-200/70 bg-gradient-to-br from-white via-cyan-50/70 to-slate-100/90 p-2 shadow-[0_20px_80px_-42px_rgba(14,116,144,0.45)] backdrop-blur dark:border-cyan-900/40 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
