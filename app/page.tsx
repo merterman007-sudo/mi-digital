@@ -7,6 +7,7 @@ import { BrandsSection } from "@/components/sections/brands";
 import { AboutSection } from "@/components/sections/about";
 import { SeoEditorialSection } from "@/components/sections/seo-editorial";
 import { PlatformEcosystemSection } from "@/components/sections/platform-ecosystem";
+import { OperatingSystemSection } from "@/components/sections/operating-system";
 import { Footer } from "@/components/layout/footer";
 import { JsonLd } from "@/components/seo/json-ld";
 import { brands } from "@/data/brands";
@@ -52,6 +53,7 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
         <PlatformEcosystemSection />
+        <OperatingSystemSection />
         <AboutSection />
         <SeoEditorialSection />
         <BrandsSection brands={brands} />
