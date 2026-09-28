@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function QuoteReceivedPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="content-page flex min-h-screen flex-col">
       <Navbar />
       <main className="mx-auto flex w-full max-w-4xl flex-1 items-center px-4 py-16 sm:px-6 lg:px-8">
         <section className="glass-panel w-full rounded-3xl p-8 text-center md:p-12">

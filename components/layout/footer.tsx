@@ -16,20 +16,20 @@ const resourceLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-200/80 py-10 dark:border-slate-800">
+    <footer className="site-footer py-10">
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-3 lg:px-8">
         <div>
-          <p className="font-display text-lg font-semibold text-slate-900 dark:text-slate-100">
+          <p className="font-display text-lg font-semibold">
             MI DIGITAL
           </p>
-          <p className="mt-2 max-w-sm text-sm text-slate-600 dark:text-slate-300">
+          <p className="mt-2 max-w-sm text-sm">
             Performans pazarlama, SEO ve yazılım geliştirme disiplinlerini tek bir büyüme sisteminde birleştiriyoruz.
           </p>
         </div>
 
         <div>
-          <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">Hizmet Sayfaları</p>
-          <ul className="mt-3 space-y-2 text-sm text-slate-600 dark:text-slate-300">
+          <p className="text-sm font-semibold">Hizmet Sayfaları</p>
+          <ul className="mt-3 space-y-2 text-sm">
             {serviceLinks.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="transition hover:text-cyan-700 dark:hover:text-cyan-300">
@@ -41,8 +41,8 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">Kaynaklar</p>
-          <ul className="mt-3 space-y-2 text-sm text-slate-600 dark:text-slate-300">
+          <p className="text-sm font-semibold">Kaynaklar</p>
+          <ul className="mt-3 space-y-2 text-sm">
             {resourceLinks.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="transition hover:text-cyan-700 dark:hover:text-cyan-300">
@@ -54,7 +54,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-8 w-full max-w-6xl border-t border-slate-200/80 px-4 pt-6 text-sm text-slate-500 dark:border-slate-800 dark:text-slate-400 sm:px-6 lg:px-8">
+      <div className="site-footer-bottom mx-auto mt-8 w-full max-w-6xl border-t px-4 pt-6 text-sm sm:px-6 lg:px-8">
         <p>© {new Date().getFullYear()} MI DIGITAL. Tüm hakları saklıdır.</p>
       </div>
     </footer>

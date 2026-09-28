@@ -110,7 +110,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
   };
 
   return (
-    <div className="blog-detail-page flex min-h-screen flex-col">
+    <div className="content-page blog-detail-page flex min-h-screen flex-col">
       <Navbar />
       <main className="blog-detail-main mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-4 pb-20 pt-8 sm:px-6 lg:px-8">
         <JsonLd data={[articleSchema, faqSchema]} />

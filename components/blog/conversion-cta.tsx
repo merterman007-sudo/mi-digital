@@ -32,7 +32,7 @@ export function ConversionCta({
   }
 
   return (
-    <section className="rounded-3xl border border-cyan-200/70 bg-gradient-to-br from-cyan-50/80 via-white to-indigo-50/70 p-6 shadow-[0_18px_60px_-40px_rgba(14,116,144,0.45)] dark:border-cyan-900/50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 md:p-8">
+    <section className="conversion-cta rounded-3xl border border-cyan-200/70 bg-gradient-to-br from-cyan-50/80 via-white to-indigo-50/70 p-6 shadow-[0_18px_60px_-40px_rgba(14,116,144,0.45)] dark:border-cyan-900/50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 md:p-8">
       <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-700 dark:text-cyan-300">
         {badge}
       </p>

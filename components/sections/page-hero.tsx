@@ -59,7 +59,7 @@ export function PageHero({
   }
 
   return (
-    <section className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-white/85 p-8 shadow-sm dark:border-slate-800 dark:bg-slate-950/65 md:p-12">
+    <section className="page-hero-panel relative overflow-hidden rounded-3xl border border-slate-200/80 bg-white/85 p-8 shadow-sm dark:border-slate-800 dark:bg-slate-950/65 md:p-12">
       <motion.div
         className={`absolute -left-10 -top-8 -z-10 h-52 w-52 rounded-full blur-3xl ${palette.blobA}`}
         animate={reduceMotion ? undefined : { y: -8, x: 4 }}

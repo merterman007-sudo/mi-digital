@@ -43,7 +43,7 @@ const serviceCollectionSchema = {
 
 export default function ServicesPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="content-page flex min-h-screen flex-col">
       <Navbar />
       <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-8 px-4 pb-16 pt-8 sm:px-6 lg:px-8">
         <JsonLd data={serviceCollectionSchema} />

@@ -56,7 +56,7 @@ export default async function BlogCategoryPage({ params }: BlogCategoryPageProps
   };
 
   return (
-    <div className="blog-index-page flex min-h-screen flex-col">
+    <div className="content-page blog-index-page flex min-h-screen flex-col">
       <Navbar />
       <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-8 px-4 pb-16 pt-8 sm:px-6 lg:px-8">
         <JsonLd data={schema} />
