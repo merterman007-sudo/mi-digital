@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { href: "/", label: "Ana Sayfa" },
   { href: "/hizmetler", label: "Hizmetler" },
+  { href: "/leadradar", label: "LeadRadar" },
   { href: "/hakkimizda", label: "Hakkımızda" },
   { href: "/blog", label: "İçgörüler" },
 ];
